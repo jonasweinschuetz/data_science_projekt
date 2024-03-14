@@ -5,14 +5,12 @@ import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
 import json
 
+data = pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv',sep='@', encoding='utf8')
+data2 = pd.read_json('https://raw.githubusercontent.com/jonasweinschuetz/data_science_projekt/main/data/further_updated_german_canteens.json',encoding='utf8')
+german_states_geo== pd.read_json('https://github.com/jonasweinschuetz/data_science_projekt/raw/main/data/deutschland_updated.geo.json', encoding='utf8')
 
-data = pd.read_csv('german-canteens(filtered).csv',sep='@', encoding='utf8')
-data2 = pd.read_json('further_updated_german_canteens.json',encoding='utf8')
 data3 = data.join(data2.set_index('id'),on='mensa_id')
 data3.drop(columns=data3.columns[0:2], axis=1, inplace=True)
-file = open('deutschland_updated.geo.json','r',encoding='utf8')
-german_states_geo=json.load(file)
-file.close()
 
 state_frame_temp = data3.drop(columns = ['meal_id','meal_name','tags','date','name','city','address','coordinates','state'])
 state_frame_temp = state_frame_temp.drop(columns = ['employee_price','guest_price'])
@@ -27,16 +25,6 @@ state_frame_veg = state_frame_temp.loc[state_frame_temp['vvo_status']== 1]
 state_frame_veg = state_frame_veg.drop(columns='vvo_status')
 state_frame_omni = state_frame_temp.loc[state_frame_temp['vvo_status']== 2]
 state_frame_omni = state_frame_omni.drop(columns='vvo_status')
-
-
-#app = Dash(__name__)
-
-#app.layout = html.Div([
-#    html.Div(children='Hello World')
-#])
-
-#if __name__ == '__main__':
-#    app.run(debug=True, use_reloader=False)
 
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 
@@ -99,3 +87,4 @@ def display_choropleth(candidate):
 
 if __name__ == "__main__":
     app.run_server()
+
