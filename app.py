@@ -27,6 +27,7 @@ state_frame_omni = state_frame_temp.loc[state_frame_temp['vvo_status']== 2]
 state_frame_omni = state_frame_omni.drop(columns='vvo_status')
 
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 app.layout = dbc.Container([
 
@@ -86,5 +87,5 @@ def display_choropleth(candidate):
         return fig
 
 if __name__ == "__main__":
-    app.run_server()
+    app.run_server(debug= True)
 
