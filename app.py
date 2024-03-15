@@ -3,11 +3,16 @@ import plotly.express as px
 from dash import Dash, html, dash_table, dcc, Input, Output
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
+import re
+import requests
 import json
 
 data = pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv',sep='@', encoding='utf8')
 data2 = pd.read_json('https://raw.githubusercontent.com/jonasweinschuetz/data_science_projekt/main/data/further_updated_german_canteens.json',encoding='utf8')
-german_states_geo = pd.read_json('https://github.com/jonasweinschuetz/data_science_projekt/raw/main/data/deutschland_updated.geo.json', encoding='utf8')
+
+url_german_states_geo = 'https://github.com/jonasweinschuetz/data_science_projekt/raw/main/data/deutschland_updated.geo.json'
+resp = requests.get(url_german_states_geo)
+german_states_geo = json.loads(resp.text)
 
 data3 = data.join(data2.set_index('id'),on='mensa_id')
 data3.drop(columns=data3.columns[0:2], axis=1, inplace=True)
