@@ -1,0 +1,69 @@
+vegetarische speisen (v), vegane speisen (v*)
+vegetarische speisen (v), vegane speisen (v*), enthält alkohol (a), knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), knoblauch (k)
+gerichte der menülinie mensavital, vegetarische speisen (v), vegane speisen (v*), knoblauch (k)
+gerichte der menülinie mensaregional, vegetarische speisen (v), vegane speisen (v*), knoblauch (k)
+gerichte der menülinie mensaregional, vegetarische speisen (v), vegane speisen (v*)
+gerichte der menülinie mensavital, vegetarische speisen (v), vegane speisen (v*)
+gerichte der menülinie mensainternational, vegetarische speisen (v), vegane speisen (v*), knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensainternational
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensainternational, knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensaregional, knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, enthält alkohol (a), knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensaregional, enthält alkohol (a)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensaregional
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, gerichte der menülinie mensaregional
+vegetarische speisen (v), vegane speisen (v*), speiseangebote mit bio-komponenten (zertifizierungsnummer de-öko-021-kontrollstelle), knoblauch (k)
+gerichte der menülinie mensainternational, vegetarische speisen (v), vegane speisen (v*)
+vegetarische speisen (v), vegane speisen (v*), speiseangebote mit bio-komponenten (zertifizierungsnummer de-öko-021-kontrollstelle)
+vegetarische speisen (v), vegane speisen (v*), enthält alkohol (a)
+gerichte der menülinie mensavital, dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., vegetarische speisen (v), vegane speisen (v*), knoblauch (k)
+dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., vegetarische speisen (v), vegane speisen (v*)
+dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., gerichte der menülinie mensaregional, vegetarische speisen (v), vegane speisen (v*), knoblauch (k)
+gerichte der menülinie mensaregional, vegetarische speisen (v), vegane speisen (v*), speiseangebote mit bio-komponenten (zertifizierungsnummer de-öko-021-kontrollstelle), knoblauch (k)
+gerichte der menülinie mensavital, vegetarische speisen (v), vegane speisen (v*), enthält alkohol (a), knoblauch (k)
+dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., gerichte der menülinie mensaregional, vegetarische speisen (v), vegane speisen (v*)
+gerichte der menülinie mensavital, dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., vegetarische speisen (v), vegane speisen (v*)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar).
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., gerichte der menülinie mensaregional
+vegetarische speisen (v), vegane speisen (v*), dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., gerichte der menülinie mensaregional, knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar).
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, speiseangebote mit bio-komponenten (zertifizierungsnummer de-öko-021-kontrollstelle), knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensainternational, dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar).
+dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., gerichte der menülinie mensainternational, vegetarische speisen (v), vegane speisen (v*), knoblauch (k)
+gerichte der menülinie mensavital, vegetarische speisen (v), vegane speisen (v*), enthält alkohol (a)
+gerichte der menülinie mensainternational, vegetarische speisen (v), vegane speisen (v*), enthält alkohol (a), knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensainternational, dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, enthält alkohol (a)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, gerichte der menülinie mensaregional, enthält alkohol (a)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensainternational, enthält alkohol (a), knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., gerichte der menülinie mensavital, knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, gerichte der menülinie mensaregional, knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensaregional, enthält alkohol (a), knoblauch (k)
+gerichte der menülinie mensavital, vegetarische speisen (v), vegane speisen (v*), speiseangebote mit bio-komponenten (zertifizierungsnummer de-öko-021-kontrollstelle)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, speiseangebote mit bio-komponenten (zertifizierungsnummer de-öko-021-kontrollstelle)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, enthält alkohol (a), knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, gerichte der menülinie mensaregional
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar).
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., gerichte der menülinie mensaregional
+vegetarische speisen (v), vegane speisen (v*), dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., gerichte der menülinie mensaregional, knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar).
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, speiseangebote mit bio-komponenten (zertifizierungsnummer de-öko-021-kontrollstelle), knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensainternational, dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar).
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensainternational, dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, enthält alkohol (a)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, gerichte der menülinie mensaregional, enthält alkohol (a)
+vegetarische speisen (v), vegane speisen (v*), dieses gericht ist auch als kinderessen gegen vorlage des kinderausweises erhältlich (sättigungsbeilage und gemüse frei wählbar)., gerichte der menülinie mensavital, knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, gerichte der menülinie mensaregional, knoblauch (k)
+vegetarische speisen (v), vegane speisen (v*), gerichte der menülinie mensavital, speiseangebote mit bio-komponenten (zertifizierungsnummer de-öko-021-kontrollstelle)
+auf wunsch vegan
+mit undefinierter chemikalie wahlweise auch vegan
+a20,a25,a30 4,50 € herzhafter leberkäs z1,z2,z3,z8,z9 auch vegan möglich, mit zwei spiegeleiern a22 , dazu kartoffelstampf 4,80 € seelachsfilet im kartoffelmantel a20,a23 mit remoulade a20,a22,a30 , dazu potatoe wedges a20,a20.1 4,80 € gebackene apfe

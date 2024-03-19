@@ -1,96 +1,52 @@
-import pandas as pd
-import plotly.express as px
-from dash import Dash, html, dash_table, dcc, Input, Output
+import dash
+from dash import Dash, dcc, html
 import dash_bootstrap_components as dbc
-import plotly.graph_objects as go
-import re
-import requests
-import json
+import plotly.express as px
+from dash.dependencies import Input, Output
+import pandas as pd
 
-data = pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv',sep='@', encoding='utf8')
-data2 = pd.read_json('https://raw.githubusercontent.com/jonasweinschuetz/data_science_projekt/main/data/further_updated_german_canteens.json',encoding='utf8')
+app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-url_german_states_geo = 'https://github.com/jonasweinschuetz/data_science_projekt/raw/main/data/deutschland_updated.geo.json'
-resp = requests.get(url_german_states_geo)
-german_states_geo = json.loads(resp.text)
+# styling the sidebar
+SIDEBAR_STYLE = {
+    "position": "fixed",
+    "top": 0,
+    "left": 0,
+    "bottom": 0,
+    "width": "13rem",
+    "padding": "2rem 1rem",
+    "background-color": "#f8f9fa",
+}
+nav = dbc.Nav([
+     #dbc.NavItem(dbc.NavLink("Home", href=dash.page_registry['pages.home']['path'], active = "exact")),
+     dbc.NavItem(dbc.NavLink("Home", href=dash.page_registry['pages.home']['path'], active = "exact")),
+     dbc.NavItem(dbc.NavLink("How we collect the data", href=dash.page_registry['pages.collect']['path'], active = "exact")),
+     dbc.NavItem(dbc.NavLink("How we clean the data", href=dash.page_registry['pages.cleaning']["path"], active = "exact")),            
+     dbc.NavItem(dbc.NavLink("RQ 1", href=dash.page_registry['pages.rq1']["path"], active = "exact")),
+     dbc.NavItem(dbc.NavLink("RQ 2", href=dash.page_registry['pages.rq2']["path"], active = "exact")),
+     #dbc.NavItem(dbc.NavLink("RQ 3", href=dash.page_registry['pages.rq3']["path"], active = "exact")),
+     #dbc.NavItem(dbc.NavLink("RQ 4", href=dash.page_registry['pages.rq4']["path"], active = "exact")),            
+     #dbc.NavItem(dbc.NavLink("RQ 5", href=dash.page_registry['pages.rq5']["path"], active = "exact")),
+     #dbc.NavItem(dbc.NavLink("RQ 6", href=dash.page_registry['pages.rq6']["path"], active = "exact")),            
+     #dbc.NavItem(dbc.NavLink("RQ 7", href=dash.page_registry['pages.rq7']["path"], active = "exact")),
+    ], 
+    vertical = True,
+    pills=True,
+    style=SIDEBAR_STYLE,
+    )
 
-data3 = data.join(data2.set_index('id'),on='mensa_id')
-data3.drop(columns=data3.columns[0:2], axis=1, inplace=True)
 
-state_frame_temp = data3.drop(columns = ['meal_id','meal_name','tags','date','name','city','address','coordinates','state'])
-state_frame_temp = state_frame_temp.drop(columns = ['employee_price','guest_price'])
-state_frame_temp = state_frame_temp.groupby(['vvo_status','state-id']).mean()
-state_frame_temp = state_frame_temp.drop([-1,4])
-state_frame_temp = state_frame_temp.round(2)
-state_frame_temp = state_frame_temp.reset_index()
-
-state_frame_vgn = state_frame_temp.loc[state_frame_temp['vvo_status']== 0]
-state_frame_vgn = state_frame_vgn.drop(columns='vvo_status')
-state_frame_veg = state_frame_temp.loc[state_frame_temp['vvo_status']== 1]
-state_frame_veg = state_frame_veg.drop(columns='vvo_status')
-state_frame_omni = state_frame_temp.loc[state_frame_temp['vvo_status']== 2]
-state_frame_omni = state_frame_omni.drop(columns='vvo_status')
-
-app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
-server = app.server
-
-app.layout = dbc.Container([
-
-
-    dbc.Row([
-            dbc.Col([
-            dcc.Markdown('Heatmap of the Prices per categorie:',style={'textAlign':'center'})
-        ],width = 12)
-    ]),
-
-    dbc.Row([
-        dbc.Col([
-            dbc.RadioItems(
-                options=[
-                    {"label": "Vegan Map", "value": 1},
-                    {"label": "Vegetarian Map", "value": 2},
-                    {"label": "Omnivor Map", "value": 3},
-                ],
-                value=1,
-                inline=True,
-                id="candidate",
-            ),
+app.layout = dbc.Container(
+    [
+        dbc.Row([
+            dbc.Col([nav,],
+                    width = 1),
+            dbc.Col([dash.page_container,])
         ])
-    ]),
+    ],
+    className="dbc",
     
-    dbc.Row([
-        dbc.Col([
-           dcc.Graph(id="graph")
-            
-        ])
-    ])
-])
-@app.callback(
-    Output("graph", "figure"), 
-    Input("candidate", "value")
 )
 
-def display_choropleth(candidate):
-
-        if candidate==1:
-            temp = state_frame_vgn
-        elif candidate==2:
-            temp = state_frame_veg
-        else:
-            temp = state_frame_omni
-        
-        fig = px.choropleth_mapbox(temp,
-                            locations='state-id',
-                            geojson=german_states_geo,
-                            color='student_price',
-                            hover_name='student_price',
-                            hover_data=['student_price'],    
-                            mapbox_style='carto-positron',
-                            center={'lat':51,'lon':10},
-                            zoom=4
-                            )
-        return fig
-
 if __name__ == "__main__":
-    app.run_server(debug= True)
-
+    app.run_server(debug=True)
