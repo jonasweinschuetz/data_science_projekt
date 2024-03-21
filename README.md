@@ -35,6 +35,8 @@ Each data point represents a dish that was offered on a particular day. Each ent
 
 Additionally, we also determined the corresponding federal state for each dish using Wikipedia's list of the German cities.
 
+![DataSources](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/26142473-2b9f-45a4-b436-e73940d5b06b)
+
 
 ## Dependencies
 
