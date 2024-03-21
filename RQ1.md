@@ -8,6 +8,19 @@
 ### Trend
 ![rq1_city_2](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/adbc7d75-cb3f-4c90-9511-ab8e65464fbc)
 
+**Average price change (per year since 2021)**
+
+| Location             | Price Increase (€/Year) | Percentage Increase (\%/Year) |
+|----------------------|-------------------------|-------------------------------|
+| Kiel:                | 0.41 €                  | 10.41 \%                      |
+| Flensburg:           | 0.42 €                  | 11.05 \%                      |
+| Lübeck:              | 0.16 €                  | 8.67 \%                       |
+| Heide:               | 0.47 €                  | 9.36 \%                       |
+| **Schleswig-Holstein:** | 0.36 €              | 9.87 \%                       |
+
+_Food Inflation = Germany-wide food inflation rate ([destatis.de](https://destatis.de))_
+
+
 Text Text
 
 ## Price Over Time by Status (student/employee/guest)
