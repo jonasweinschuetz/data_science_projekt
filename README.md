@@ -76,8 +76,7 @@ The most challenging part was classifying the dishes into the three VVO categori
 
 ## Website
 
-Hier LINK!!!
-
+Our very professional [web-application](http://94.134.225.124:13337)
 
 # Research Questions
 
@@ -161,3 +160,6 @@ When glancing over the average weekday prices for each state there is no aperent
 ![alt text](documentation_files/weekly-price-hessen.png)
 ![alt text](documentation_files/weekly-price-mp.png)
 ![alt text](documentation_files/weekly-price-mensa1.png)
+
+
+## 5. Does the weekday influence the availability of dietary options in German canteens?
