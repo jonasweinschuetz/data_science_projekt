@@ -5,55 +5,22 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
 import json
-
+import os
 
 dash.register_page(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
-
+#os.chdir('C:/Users/Micro/Desktop/Neuer Ordner/data_science_projekt')
  
+bi_weekly_averages_no_outliers = pd.read_csv('./data/data_webapp/rq3_bi_weekly_averages_no_outliers.csv',sep='@',encoding='utf8')
 
-#df = pd.read_csv('./data/german-canteens(filtered).csv', sep='@', engine='python')
-df =pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv',sep='@',encoding='utf8')
-# Load your data
-#data = pd.read_csv('./data/german-canteens(filtered).csv', sep='@', encoding='utf8')
-data =pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv',sep='@',encoding='utf8')   
+data3 = pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/data_webapp/rq3_data3.csv',sep='@',encoding='utf8')
 
-data2 = pd.read_json('./data/further_updated_german_canteens.json', encoding='utf8')
+avg_student_prices = pd.read_csv('./data/data_webapp/rq3_avg_student_prices.csv', sep='@', encoding='utf8')
+avg_employee_prices = pd.read_csv('./data/data_webapp/rq3_avg_employee_prices.csv', sep='@', encoding='utf8')
+avg_guest_prices = pd.read_csv('./data/data_webapp/rq3_avg_guest_prices.csv', sep='@', encoding='utf8')
+
 
 with open('./data/deutschland_updated.geo.json', 'r', encoding='utf8') as file:
     german_states_geo = json.load(file)
-
-data3 = data.join(data2.set_index('id'), on='mensa_id')
-data3.drop(columns=data3.columns[0:2], axis=1, inplace=True)
-
-# Convert 'date' column to datetime type
-df['date'] = pd.to_datetime(df['date'])
-
-# Convert price columns to numeric type, coercing errors to NaN
-df['student_price'] = pd.to_numeric(df['student_price'], errors='coerce')
-df['employee_price'] = pd.to_numeric(df['employee_price'], errors='coerce')
-df['guest_price'] = pd.to_numeric(df['guest_price'], errors='coerce')
-
-# Function to remove outliers based on the IQR for bi-weekly averages
-def remove_outliers_bi_weekly(df):
-    columns = ['student_price', 'employee_price', 'guest_price']
-    for column in columns:
-        Q1 = df[column].quantile(0.25)
-        Q3 = df[column].quantile(0.75)
-        IQR = Q3 - Q1
-        df = df[(df[column] >= (Q1 - 1.5 * IQR)) & (df[column] <= (Q3 + 1.5 * IQR))]
-    return df
-
-# Drop rows with NaN or zero values in any of the price columns
-df_cleaned = df.dropna(subset=['student_price', 'employee_price', 'guest_price'])
-df_cleaned = df_cleaned[(df_cleaned['student_price'] > 0) &
-                        (df_cleaned['employee_price'] > 0) &
-                        (df_cleaned['guest_price'] > 0)]
-
-# Resample and calculate bi-weekly (2-week) averages
-bi_weekly_averages = df_cleaned.set_index('date').resample('2W')['student_price', 'employee_price', 'guest_price'].mean().reset_index()
-
-# Remove outliers based on the IQR for bi-weekly averages
-bi_weekly_averages_no_outliers = remove_outliers_bi_weekly(bi_weekly_averages)
 
 # Plot using Plotly
 fig = go.Figure()
@@ -84,15 +51,17 @@ fig.update_layout(title='Bi-Weekly Average Meal Prices in German Canteens Over T
                   yaxis_title='Price (EUR)',
                   legend_title='Category')
 
-# Ensure you're calculating the min/max after merging to avoid NaN issues
-data3['student_price'] = pd.to_numeric(data3['student_price'], errors='coerce')
-data3['employee_price'] = pd.to_numeric(data3['employee_price'], errors='coerce')
-data3['guest_price'] = pd.to_numeric(data3['guest_price'], errors='coerce')
+
+
 
 # Recalculate min and max after conversion to numeric, setting max to 10 for all
-range_color_student = (data3['student_price'].min(), min(data3['student_price'].max(), 10))
-range_color_employee = (data3['employee_price'].min(), min(data3['employee_price'].max(), 10))
-range_color_guest = (data3['guest_price'].min(), min(data3['guest_price'].max(), 10))
+range_color_student = (avg_student_prices['student_price'].min(), min(avg_student_prices['student_price'].max(), 7))
+range_color_employee = (avg_employee_prices['employee_price'].min(), min(avg_employee_prices['employee_price'].max(), 7))
+range_color_guest = (avg_guest_prices['guest_price'].min(), min(avg_guest_prices['guest_price'].max(), 7))
+
+
+# wird erstell
+
 
 fig2 = go.Figure()
 
@@ -102,37 +71,34 @@ colorscale = "Viridis"
 # Adding traces for each category with zmax set to 10
 fig2.add_trace(go.Choroplethmapbox(
     geojson=german_states_geo,
-    locations=data3['state-id'],
-    z=data3['student_price'],
+    locations=avg_student_prices['state-id'],
+    z=avg_student_prices['student_price'],
     colorscale=colorscale,
     zmin=range_color_student[0],
-    zmax=10,  # Updated zmax to 10
-    name='Student Prices',
-    
+    zmax=5,  
+    name='Average Student Prices',
     visible=True
 ))
 
 fig2.add_trace(go.Choroplethmapbox(
     geojson=german_states_geo,
-    locations=data3['state-id'],
-    z=data3['employee_price'],
+    locations=avg_employee_prices['state-id'],
+    z=avg_employee_prices['employee_price'],
     colorscale=colorscale,
     zmin=range_color_employee[0],
-    zmax=10,  # Updated zmax to 10
-    name='Employee Prices',
-    
+    zmax=7,  
+    name='Average Employee Prices',
     visible=False
 ))
 
 fig2.add_trace(go.Choroplethmapbox(
     geojson=german_states_geo,
-    locations=data3['state-id'],
-    z=data3['guest_price'],
+    locations=avg_guest_prices['state-id'],
+    z=avg_guest_prices['guest_price'],
     colorscale=colorscale,
     zmin=range_color_guest[0],
-    zmax=10,  # Updated zmax to 10
-    name='Guest Prices',
-    
+    zmax=10,  
+    name='Average Guest Prices',
     visible=False
 ))
 
@@ -141,12 +107,12 @@ fig2.update_layout(
     mapbox_style="carto-positron",
     mapbox_zoom=3.5,
     mapbox_center={"lat": 51, "lon": 10},
-    title='Price Distribution in German Canteens',
+    title='Average Price Distribution in German Canteens',
     updatemenus=[{
         'buttons': [
-            {'label': 'Student Prices', 'method': 'update', 'args': [{'visible': [True, False, False]}]},
-            {'label': 'Employee Prices', 'method': 'update', 'args': [{'visible': [False, True, False]}]},
-            {'label': 'Guest Prices', 'method': 'update', 'args': [{'visible': [False, False, True]}]}
+            {'label': 'Average Student Prices', 'method': 'update', 'args': [{'visible': [True, False, False]}]},
+            {'label': 'Average Employee Prices', 'method': 'update', 'args': [{'visible': [False, True, False]}]},
+            {'label': 'Average Guest Prices', 'method': 'update', 'args': [{'visible': [False, False, True]}]}
         ],
         'direction': 'down',
         'showactive': True,
@@ -172,6 +138,7 @@ layout = dbc.Container([
         ])
     ]),    
 ])
+
 
 
 
