@@ -8,10 +8,8 @@ To explore this research question we build a data set for all canteens in Schles
 
 Looking at the average meal pricing data of the cities it reveals that each city within Schleswig-Holstein exhibited significant price changes. Kiel, Flensburg, and Heide have shown a steady increase in meal prices. Lübeck presents an interesting case with the smallest price increase by EUR, but only an slightly smaller percentage increase than the rest, indicating that the local pricing in general seems to be cheaper. 
 
-### Average Monthly Price Graph
 ![rq1_city_1](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/1bc7cb1d-f8db-49bc-9240-cc0e7d682dc6)
 
-### Average Price Trend Graph
 ![rq1_city_2](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/adbc7d75-cb3f-4c90-9511-ab8e65464fbc)
 
 **Average price change (per year since 2021)**
