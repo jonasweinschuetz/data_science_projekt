@@ -181,23 +181,23 @@ def update_graph(value1):
              title="Percentage of v/v/o meals each Weekday in the state of "+value1)
     fig_state.update_layout(autosize=False,width=900,height=300,)
     
-    if (value3 == ''):
-        value3 = 0
+    #if (value3 == ''):
+    #    value3 = 0
         
-    temp_int = float(value3)
-    temp_int = int(value3)
+    #temp_int = float(value3)
+    #temp_int = int(value3)
     
-    if (value4 == ''):
-        value4 = 0
+    #if (value4 == ''):
+    #    value4 = 0
     
-    fig_temp = canteen_meal_distribution_after_std_threshold(df_canteen, float(value4), temp_int, value2)
-    res =[]
+    #fig_temp = canteen_meal_distribution_after_std_threshold(df_canteen, float(value4), temp_int, value2)
+    #res =[]
     
-    for i in range(len(fig_temp)):
-        res += [dbc.Col([
-            dcc.Graph(id="graph10_"+str(i),
-            figure = fig_temp[i])
-            ],width = 12)]
+    #for i in range(len(fig_temp)):
+     #   res += [dbc.Col([
+    #        dcc.Graph(id="graph10_"+str(i),
+    #        figure = fig_temp[i])
+     #       ],width = 12)]
         
     return fig_state#,res 
 
