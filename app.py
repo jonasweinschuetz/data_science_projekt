@@ -6,7 +6,7 @@ from dash.dependencies import Input, Output
 import pandas as pd
 
 app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+server = app.server
 # styling the sidebar
 SIDEBAR_STYLE = {
     "position": "fixed",
