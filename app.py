@@ -25,7 +25,7 @@ nav = dbc.Nav([
      dbc.NavItem(dbc.NavLink("Data collection", href=dash.page_registry['pages.collect']['path'], active = "exact", style = LETTER_STYLE)),
      dbc.NavItem(dbc.NavLink("Data cleaning", href=dash.page_registry['pages.cleaning']["path"], active = "exact", style = LETTER_STYLE)),            
      dbc.NavItem(dbc.NavLink("How has the average price for a meal in Schleswig-Holstein changed since 2021??", href=dash.page_registry['pages.rq1']["path"], active = "exact", style = LETTER_STYLE)),
-     dbc.NavItem(dbc.NavLink("How do average student meal prices compare according to their category?", href=dash.page_registry['pages.rq2']["path"], active = "exact", style = LETTER_STYLE)),
+    # dbc.NavItem(dbc.NavLink("How do average student meal prices compare according to their category?", href=dash.page_registry['pages.rq2']["path"], active = "exact", style = LETTER_STYLE)),
      dbc.NavItem(dbc.NavLink("How does the average price change for visitors in Germany since 2023?", href=dash.page_registry['pages.rq3']["path"], active = "exact", style = LETTER_STYLE)),
      dbc.NavItem(dbc.NavLink("Does the day of the week influence average meal prices?", href=dash.page_registry['pages.rq4']["path"], active = "exact", style = LETTER_STYLE)),            
      dbc.NavItem(dbc.NavLink("Does the weekday influence the availability of dietary options in German canteens?", href=dash.page_registry['pages.rq5']["path"], active = "exact", style = LETTER_STYLE)),
