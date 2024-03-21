@@ -128,38 +128,38 @@ layout = dbc.Container([
             dcc.Graph(id="graph9")
         ],width = 12)
     ]),
-    dbc.Row([
-            dbc.Col([
-             dbc.Select(
-    options=[
-        {"label": "Germany", "value": "Germany"},
-        {"label": "Baden-Württemberg", "value": "Baden-Württemberg"},
-        {"label": "Bayern", "value": "Bayern"},
-        {"label": "Berlin", "value": "Berlin"},
-        {"label": "Brandenburg", "value": "Brandenburg"},
-        {"label": "Bremen", "value": "Bremen"},
-        {"label": "Hamburg", "value": "Hamburg"},
-        {"label": "Hessen", "value": "Hessen"},
-        {"label": "Mecklenburg-Vorpommern", "value": "Mecklenburg-Vorpommern"},
-        {"label": "Niedersachsen", "value": "Niedersachsen"},
-        {"label": "Nordrhein-Westfalen", "value": "Nordrhein-Westfalen"},
-        {"label": "Rheinland-Pfalz", "value": "Rheinland-Pfalz"},
-        {"label": "Saarland", "value": "Saarland"},
-        {"label": "Sachsen", "value": "Sachsen"},
-        {"label": "Sachsen-Anhalt", "value": "Sachsen-Anhalt"},
-        {"label": "Schleswig-Holstein", "value": "Schleswig-Holstein"},
-        {"label": "Thüringen", "value": "Thüringen"},
-    ], value="Germany",id="selector5",)
-        ],width = 12)
-    ]),
-    dbc.Row([
-            dbc.Col([
-             dbc.Input(placeholder="enter number between 0-2" ,id = "input1",min = 0,max =2, valid=True,value=2),
-             dbc.Input(placeholder="enter number between 0.0-20.0" ,id = "input2",min = 0,max =20, valid=True,value=8),
-             
-        ],width = 12)
-    ]),
-    dbc.Row(id = "colum"),
+   # dbc.Row([
+   #         dbc.Col([
+   #          dbc.Select(
+   # options=[
+   #     {"label": "Germany", "value": "Germany"},
+   #     {"label": "Baden-Württemberg", "value": "Baden-Württemberg"},
+   #     {"label": "Bayern", "value": "Bayern"},
+   #     {"label": "Berlin", "value": "Berlin"},
+   #     {"label": "Brandenburg", "value": "Brandenburg"},
+   #     {"label": "Bremen", "value": "Bremen"},
+   #     {"label": "Hamburg", "value": "Hamburg"},
+   #    {"label": "Hessen", "value": "Hessen"},
+   #     {"label": "Mecklenburg-Vorpommern", "value": "Mecklenburg-Vorpommern"},
+   #     {"label": "Niedersachsen", "value": "Niedersachsen"},
+   #     {"label": "Nordrhein-Westfalen", "value": "Nordrhein-Westfalen"},
+   #     {"label": "Rheinland-Pfalz", "value": "Rheinland-Pfalz"},
+   #     {"label": "Saarland", "value": "Saarland"},
+   #     {"label": "Sachsen", "value": "Sachsen"},
+   #     {"label": "Sachsen-Anhalt", "value": "Sachsen-Anhalt"},
+   #     {"label": "Schleswig-Holstein", "value": "Schleswig-Holstein"},
+   #     {"label": "Thüringen", "value": "Thüringen"},
+   # ], value="Germany",id="selector5",)
+   #     ],width = 12)
+   # ]),
+   # dbc.Row([
+    #        dbc.Col([
+    #         dbc.Input(placeholder="enter number between 0-2" ,id = "input1",min = 0,max =2, valid=True,value=2),
+    #         dbc.Input(placeholder="enter number between 0.0-20.0" ,id = "input2",min = 0,max =20, valid=True,value=8),
+    #        
+    #    ],width = 12)
+   # ]),
+   # dbc.Row(id = "colum"),
 ])
 @callback(
     Output("graph9", "figure"),
