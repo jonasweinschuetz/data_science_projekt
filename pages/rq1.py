@@ -2,25 +2,27 @@ import dash
 from dash import Dash, dcc, html, callback, Input, Output
 import dash_bootstrap_components as dbc
 import plotly.express as px
-import pandas as pd
-import re
-import requests
-import json
-from sklearn.linear_model import LinearRegression
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
+import pandas as pd
+from sklearn.linear_model import LinearRegression
 import numpy as np
 import datetime
+import json
 
 dash.register_page(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
 
 file_path_data = "C:/Users/Micro/Desktop/git_projekte/git-hub/data_science_projekt/data/"
-
 df_monthly = pd.read_json(f'{file_path_data}avg_city_SH_monthly.json')
+df = pd.read_csv(f'{file_path_data}meals_SH_canteens_merged_filtered_.csv', sep='@')
+
+
+with open(f'{file_path_data}monthly_avg.json', 'r') as file:
+    monthly_data = json.load(file)
+    
 df_monthly['date'] = pd.to_datetime(df_monthly['date'], unit='ms')
 df_monthly_clean = df_monthly.dropna(subset=['average_price'])
 cities = df_monthly_clean['city'].unique()
-
 colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
 color_idx = 0
 fig1 = go.Figure()
@@ -82,10 +84,6 @@ fig1.update_layout(
     yaxis_title='Average Price (in €)',
     legend=dict(title="City", orientation="v", x=1, xanchor="left", y=1, yanchor="auto")
 )
-
-
-# Load CSV file
-df = pd.read_csv(f'{file_path_data}meals_SH_canteens_merged_filtered_.csv', sep='@')
 
 # Prepare data
 df['date'] = pd.to_datetime(df['date'])
@@ -163,8 +161,6 @@ fig2.update_layout(
     ]
 )
 
-with open(f'{file_path_data}monthly_avg.json', 'r') as file:
-    monthly_data = json.load(file)
 
 # DataFrame
 df_monthly = pd.DataFrame(monthly_data)
@@ -226,12 +222,8 @@ fig3.update_layout(
     yaxis_title='Price',
     legend=dict(title="Category", orientation="v", x=1, xanchor="left", y=1, yanchor="auto")
 )
+
 ## dash
-
-
-
-
-
 layout = dbc.Container([
     dbc.Row([dbc.Col([
             dcc.Markdown('How does the average price for a meal change over the observed time frame (Schleswig-Holstein)?',style={'textAlign':'center'})
@@ -240,23 +232,17 @@ layout = dbc.Container([
     
     dbc.Row([
         dbc.Col([
-           dcc.Graph(id="graph1",
-                     figure = fig1)
-            
+           dcc.Graph(id="graph1", figure = fig1)
         ])
     ]),
     dbc.Row([
         dbc.Col([
-           dcc.Graph(id="graph2",
-                     figure = fig2)
-            
+           dcc.Graph(id="graph2", figure = fig2)  
         ])
     ]),
     dbc.Row([
         dbc.Col([
-           dcc.Graph(id="graph3",
-                     figure = fig3)
-            
+           dcc.Graph(id="graph3", figure = fig3)   
         ])
     ]),
-    ])
+])

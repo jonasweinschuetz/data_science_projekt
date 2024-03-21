@@ -12,7 +12,16 @@ dash.register_page(__name__, path= '/', external_stylesheets =[dbc.themes.BOOTST
 layout = dbc.Container([
     dbc.Row([
             dbc.Col([
-            dcc.Markdown('Hier könnte ihr home-text stehen',style={'textAlign':'center'})
+            dcc.Markdown('Feeding the Academic Appetite:',style={'textAlign':'center'})
+        ],width = 12),
+            dbc.Col([
+            dcc.Markdown('Price Dynamics and Dietary Trends of German Canteens',style={'textAlign':'center'})
+        ],width = 12),
+            dbc.Col([
+            dcc.Markdown('a Data Science Projekt from',style={'textAlign':'center'})
+        ],width = 12),
+            dbc.Col([
+            dcc.Markdown('',style={'textAlign':'center'})
         ],width = 12)
     ]),
     ])
