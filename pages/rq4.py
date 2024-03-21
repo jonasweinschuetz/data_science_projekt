@@ -8,7 +8,7 @@ import json
 import os
 
 dash.register_page(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
-os.chdir('C:/Users/Micro/Desktop/Neuer Ordner/data_science_projekt')
+#os.chdir('C:/Users/Micro/Desktop/Neuer Ordner/data_science_projekt')
 
 df = pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/data_webapp/rq4_df.csv',sep='@',encoding='utf8')
 
