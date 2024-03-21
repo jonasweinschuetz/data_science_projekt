@@ -8,7 +8,7 @@ import json
 import os
 
 dash.register_page(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
-os.chdir('C:/Users/Micro/Desktop/Neuer Ordner/data_science_projekt')
+#os.chdir('C:/Users/Micro/Desktop/Neuer Ordner/data_science_projekt')
 
 # fig wird erstellt
 
