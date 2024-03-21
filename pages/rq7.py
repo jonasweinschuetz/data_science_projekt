@@ -95,4 +95,26 @@ layout = dbc.Container([
             
         ])
     ]),
+    dbc.Row([
+        dbc.Col([
+           dcc.Markdown('''
+
+# Research Question 7: Does a university’s location influence the average price of meals for students?
+
+## Impact of University Location on Student Meal Prices
+
+Displayed in this graphic are the 100 most expensive and cheapest canteens in Germany. Notably, there is some overlap among these establishments. When accounting for the entire range, the cheapest canteens predominantly cluster in Lower Saxony and North Rhine-Westphalia, particularly along the border with the Netherlands. Surprisingly, numerous affordable university canteens are situated in the southern regions. Conversely, the most expensive canteens tend to be located in the south near the French border, with additional high-priced options in Schleswig-Holstein and throughout central Germany.
+
+
+## Key Finding:
+
+Significant disparities exist in student meal prices across different German states.
+
+Interestingly, we observe no distinct east-west divide in the pricing patterns, contrary to prior expectations. While the southern German states tend to have slightly higher prices overall, it's noteworthy that some of the cheapest canteens also hail from the southern regions. This suggests a nuanced landscape where geographical location does not strictly dictate pricing.
+
+
+
+''',style={'textAlign':'center'})   
+        ])
+    ]),
 ])
