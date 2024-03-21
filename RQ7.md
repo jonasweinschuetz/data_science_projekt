@@ -2,7 +2,13 @@
 
 ## Impact of University Location on Student Meal Prices
 
-![alt text](dooott.png)
+
+![üüüüüüüüüüü](https://github.com/jonasweinschuetz/data_science_projekt/assets/90426856/65258518-1789-4067-8e26-be4976a3ad0a)
+
+
+
+![expen](https://github.com/jonasweinschuetz/data_science_projekt/assets/90426856/5ff554b4-cd17-4992-b2ff-c6e231d0421f)
+
 
 ### Most Expensive University Canteens:
 | University/Canteen                           | Price (€) |
@@ -12,6 +18,9 @@
 | Mensa Lörrach                               | 5.54       |
 | Mensagarten Saarbrücken                     | 5.52       |
 | Mensa HTW Saar Rotenbühl                    | 5.45       |
+
+![cheapest](https://github.com/jonasweinschuetz/data_science_projekt/assets/90426856/306e074c-f283-400c-a56a-e8cc66210463)
+
 
 ### Most Budget-Friendly University Canteens:
 | University/Canteen                           | Price (€) |
@@ -24,3 +33,5 @@
 
 ## Key Finding:
 Significant disparities exist in student meal prices across different German states.
+
+![mkmmmm](https://github.com/jonasweinschuetz/data_science_projekt/assets/90426856/8b251304-216a-486c-b168-a6daf75aeeca)
