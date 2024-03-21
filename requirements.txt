@@ -1,7 +1,10 @@
 pandas
+requests
 plotly
 dash
 dash_bootstrap_components
 plotly-express
+scikit-learn
 gunicorn
-requests
+numpy
+wordcloud
