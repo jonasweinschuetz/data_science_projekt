@@ -21,6 +21,16 @@
 _Food Inflation = Germany-wide food inflation rate ([destatis.de](https://destatis.de))_
 
 
+| Location          | 2022   | 2023  |
+|-------------------|-------|-------|
+| Kiel:             | 8.7 %  | 12.4 % |
+| Flensburg:        | 1.7 %  | 9.8 %  |
+| Lübeck:           | 15.8 % | 6.8 %  |
+| Heide:            | 11.8 % | 12.2 % |
+| **SH:**           | 9.5 %  | 10.3 % |
+| **Food Inflation:** | 13.4 % | 12.4 % |
+
+
 Text Text
 
 ## Price Over Time by Status (student/employee/guest)
