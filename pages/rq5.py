@@ -163,13 +163,14 @@ layout = dbc.Container([
 ])
 @callback(
     Output("graph9", "figure"),
-    Output("colum", "children"),
+   # Output("colum", "children"),
     Input("selector4","value"),
-    Input("selector5","value"),
-    Input("input1","value"),
-    Input("input2","value")   
+    #Input("selector5","value"),
+    #Input("input1","value"),
+    #Input("input2","value")   
 )
-def update_graph(value1,value2,value3,value4):
+#def update_graph(value1,value2,value3,value4):
+def update_graph(value1):
     fig_state = px.bar(df_state[df_state["state"] == value1], 
              x="weekday",
              y="vvo_percentage",
@@ -198,6 +199,6 @@ def update_graph(value1,value2,value3,value4):
             figure = fig_temp[i])
             ],width = 12)]
         
-    return fig_state,res 
+    return fig_state#,res 
 
 
