@@ -12,7 +12,7 @@ bund_ki_res_frame= pd.read_csv('https://media.githubusercontent.com/media/jonasw
 
 bund_ki_res_frame.drop(columns=bund_ki_res_frame.columns[0], axis=1, inplace=True)
 
-state_frame_temp = pd.read_csv('./data\data_webapp/rq2_state_frame_temp.csv',sep='@',encoding='utf8')
+state_frame_temp = pd.read_csv('./data/data_webapp/rq2_state_frame_temp.csv',sep='@',encoding='utf8')
 state_frame_temp.drop(columns=state_frame_temp.columns[0], axis=1, inplace=True)
 
 file = open('./data/deutschland_updated.geo.json','r',encoding='utf8')
