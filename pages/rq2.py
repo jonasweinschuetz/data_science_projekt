@@ -11,7 +11,7 @@ dash.register_page(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
 #data2 = pd.read_json('C:/Users/Micro/Desktop/git_projekte/git-hub/data_science_projekt/data/further_updated_german_canteens.json',encoding='utf8')
 #file = open('C:/Users/Micro/Desktop/git_projekte/git-hub/data_science_projekt/data/deutschland_updated.geo.json','r',encoding='utf8')
 #data = pd.read_csv('./data/german-canteens(filtered).csv',sep='@', encoding='utf8')
-data = pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv','r',encoding='utf8')
+data = pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv',sep='@',encoding='utf8')
 
 data2 = pd.read_json('./data/further_updated_german_canteens.json',encoding='utf8')
 file = open('./data/deutschland_updated.geo.json','r',encoding='utf8')
