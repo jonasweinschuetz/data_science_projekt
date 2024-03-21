@@ -15,14 +15,15 @@ This reveals the top five most expensive canteens in Germany, led by Tossingen, 
 
 ### Most Budget-Friendly University Canteens:
 
+This highlights the five most affordable university canteens, with Heidelberg Zeighaus leading the list with a notably low price of 1.1€
 
 ![cheapest](https://github.com/jonasweinschuetz/data_science_projekt/assets/90426856/306e074c-f283-400c-a56a-e8cc66210463)
 
 
-
-
-
 ## Key Finding:
+
 Significant disparities exist in student meal prices across different German states.
+
+Interestingly, we observe no distinct east-west divide in the pricing patterns, contrary to prior expectations. While the southern German states tend to have slightly higher prices overall, it's noteworthy that some of the cheapest canteens also hail from the southern regions. This suggests a nuanced landscape where geographical location does not strictly dictate pricing.
 
 ![mkmmmm](https://github.com/jonasweinschuetz/data_science_projekt/assets/90426856/8b251304-216a-486c-b168-a6daf75aeeca)
