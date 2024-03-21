@@ -12,7 +12,7 @@ import json
 import os
 dash.register_page(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
 
-os.chdir('C:/Users/Micro/Desktop/Neuer Ordner/data_science_projekt')
+#os.chdir('C:/Users/Micro/Desktop/Neuer Ordner/data_science_projekt')
 
 file_path_data = "./data/"
 df_monthly = pd.read_json(f'{file_path_data}avg_city_SH_monthly.json')
