@@ -12,7 +12,7 @@ dash.register_page(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
  
 bi_weekly_averages_no_outliers = pd.read_csv('./data/data_webapp/rq3_bi_weekly_averages_no_outliers.csv',sep='@',encoding='utf8')
 
-data3 = pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/data_webapp/rq3_data3.csv',sep='@',encoding='utf8')
+#data3 = pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/data_webapp/rq3_data3.csv',sep='@',encoding='utf8')
 
 avg_student_prices = pd.read_csv('./data/data_webapp/rq3_avg_student_prices.csv', sep='@', encoding='utf8')
 avg_employee_prices = pd.read_csv('./data/data_webapp/rq3_avg_employee_prices.csv', sep='@', encoding='utf8')
