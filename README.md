@@ -11,11 +11,11 @@ This project aims to collect, analyze, and evaluate data from german educational
 
 ### Directories
 
-- __data__: contains the cleaned and transformed datasets used during data analysis as well as the raw data collected at the begining of our journey
-- __data_acquisition__: a collection of scripts used to collect the raw data
-- __data_cleaning__: a collection of scripts used to clean and transform the raw data, the main work is done by the *open-mensa-json-to-pandas-csv.py* script
-- __app.py__ and __pages__: files that belong to the dash application call this directory their home, *app.py* is the main script that launches the dash web app
-- __presentation+poster__: files related to the visualization of our findings, this includes the presentation slides and the poster
+- [data](https://github.com/jonasweinschuetz/data_science_projekt/tree/main/data): contains the cleaned and transformed datasets used during data analysis as well as the raw data collected at the begining of our journey
+- [data_acquisition](https://github.com/jonasweinschuetz/data_science_projekt/tree/main/data_acquisition): a collection of scripts used to collect the raw data
+- [data_cleaning](https://github.com/jonasweinschuetz/data_science_projekt/tree/main/data_cleaning): a collection of scripts used to clean and transform the raw data, the main work is done by the *open-mensa-json-to-pandas-csv.py* script
+- [app.py](https://github.com/jonasweinschuetz/data_science_projekt/blob/main/app.py) and [pages](https://github.com/jonasweinschuetz/data_science_projekt/tree/main/pages): files that belong to the dash application call this directory their home, *app.py* is the main script that launches the dash web app
+- [presentation+poster](https://github.com/jonasweinschuetz/data_science_projekt/tree/main/presentation_and_poster): files related to the visualization of our findings, this includes the presentation slides and the poster
 
 
 
@@ -54,10 +54,13 @@ To install the dependencies, run the following command in your terminal or comma
 ------
 
 
-## Chalanges 
+## Chalenges 
 
 ### Data Collection
 ### Data Cleaning
+
+The data cleaning process was relatively straightforward. To work with dish names and tags more effectively, we converted them to lowercase and filtered out line breaks and other special characters. The biggest issue we encountered was with prices. Unfortunately, there are canteens where one, two, or sometimes even all price tiers were missing. We suspect that this is due to some canteens, for example, having a single price for all their customers, which was then only recorded in the guest price line. We considered how to fill these gaps but ultimately decided not to consider missing prices for the respective price class calculation. It is particularly unfortunate that in the OpenMensa database, there were no data entries for Berlin and Bremen, which is why these two states cannot be found in our price statistics. The last point, which unfortunately came to our attention too late, is that in many canteens in Lower Saxony, almost 10 times as many dishes are found in the database on Fridays compared to the other weekdays. Unfortunately, we did not have the time to investigate potential causes of this phenomenon, but please keep this fact in mind when reviewing weekday-specific data from Lower Saxony.
+
 ### Data Transformation 
 
 The main issue lay in categorizing the data into vegan, vegetarian and omnivorous dishes (vvo categories). TODO
