@@ -61,7 +61,8 @@ def canteen_meal_distribution_after_std_threshold(df, std_threshold, max_show=20
     return figs
 
 
-path_data = "./data/german-canteens(filtered).csv"
+#path_data = "./data/german-canteens(filtered).csv"
+path_data = "'https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv"
 path_geo = './data/further_updated_german_canteens.json'
 data = pd.read_csv(path_data,sep="@",index_col=0) 
 geo_data = pd.read_json(path_geo ,encoding='utf8')
