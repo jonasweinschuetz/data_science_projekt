@@ -5,7 +5,6 @@
 This project aims to collect, analyze, and evaluate data from german educational canteens and cafeterias. The project primarily focuses on prices and the distribution of vegan, vegetarian, and meat/omnivorous dishes that are offered in the canteens. 
 
 
-------
 
 ## Repository Structure 
 
@@ -19,7 +18,6 @@ This project aims to collect, analyze, and evaluate data from german educational
 
 
 
-------
 
 ## The Dataset
 
@@ -37,7 +35,6 @@ Each data point represents a dish that was offered on a particular day. Each ent
 
 Additionally, we also determined the corresponding federal state for each dish using Wikipedia's list of the German cities.
 
-------
 
 ## Dependencies
 
@@ -51,12 +48,16 @@ This project uses Python 3.x and the following libraries:
 To install the dependencies, run the following command in your terminal or command prompt:
 
 
-------
 
 
 ## Chalenges 
 
 ### Data Collection
+
+#### Webscraping
+
+The web-scraped dataset was obtained from one of our classmates, [Lia Lenckowski](https://github.com/llenck). Her web scraper queries the subpages of the Studentenwerk SH responsible for the meal plan of each university. Each of these subpages can be passed an argument representing one of the canteens that the university has. Then, only the container containing the meal table needs to be extracted from the received HTML, and the dishes are loaded into a JSON-lines file. Since the canteens always provide their weekly schedule, a request is made for each canteen of each university of the Studentenwerk once a week.
+
 ### Data Cleaning
 
 The data cleaning process was relatively straightforward. To work with dish names and tags more effectively, we converted them to lowercase and filtered out line breaks and other special characters. The biggest issue we encountered was with prices. Unfortunately, there are canteens where one, two, or sometimes even all price tiers were missing. We suspect that this is due to some canteens, for example, having a single price for all their customers, which was then only recorded in the guest price line. We considered how to fill these gaps but ultimately decided not to consider missing prices for the respective price class calculation. It is particularly unfortunate that in the OpenMensa database, there were no data entries for Berlin and Bremen, which is why these two states cannot be found in our price statistics. The last point, which unfortunately came to our attention too late, is that in many canteens in Lower Saxony, almost 10 times as many dishes are found in the database on Fridays compared to the other weekdays. Unfortunately, we did not have the time to investigate potential causes of this phenomenon, but please keep this fact in mind when reviewing weekday-specific data from Lower Saxony.
