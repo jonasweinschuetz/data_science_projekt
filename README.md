@@ -211,6 +211,15 @@ When glancing over the average weekday prices for each state there is no aperent
 
 ## 5. Does the weekday influence the availability of dietary options in German canteens?
 
+Firstly, we examined the distribution of the three VVO categories per weekday for our entire dataset. 
+
+![alt text](documentation_files/weekdays-categories-germany.png)
+
+As expected, the distribution was fairly even. This is likely because patterns created by local regulations at the canteen level (e.g., Vegetarian Monday) tend to 'cancel out' when aggregated. Therefore, our next step was to take a closer look at our data and consider the canteens on a state level. Here two patterns emerged. In many countries (here, for example, Bavaria), the distribution remained fairly even. However, a surprising number of states had days with distinct outliers in their distribution (symbolized by Berlin and Brandenburg). These outliers are larger than can be explained by statistical noise. The hypothesis that in these states, canteens collectively offer fewer meat dishes on certain days is plausible. It is noteworthy that Berlin is the only one of these states where the outlier day has an increased offering of meat dishes.
+
+![alt text](documentation_files/weekdays-categories-3states.png)
+
+But this was not enough, we wanted to dig deeper. 
 
 
 
@@ -249,6 +258,7 @@ Significant disparities exist in student meal prices across different German sta
 Interestingly, we observe no distinct east-west divide in the pricing patterns, contrary to prior expectations. While the southern German states tend to have slightly higher prices overall, it's noteworthy that some of the cheapest canteens also hail from the southern regions. This suggests a nuanced landscape where geographical location does not strictly dictate pricing.
 
 ![mkmmmm](https://github.com/jonasweinschuetz/data_science_projekt/assets/90426856/8b251304-216a-486c-b168-a6daf75aeeca)
+
 
 
 
