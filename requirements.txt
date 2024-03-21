@@ -8,3 +8,4 @@ scikit-learn
 gunicorn
 numpy
 wordcloud
+imageio
