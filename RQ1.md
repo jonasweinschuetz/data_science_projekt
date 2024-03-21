@@ -36,10 +36,11 @@ In 2022 and 2023, meal prices in Schleswig-Holstein (SH) rose significantly, yet
 _Food Inflation = Germany-wide food inflation rate ([destatis.de](https://destatis.de))_
 
 ## Price Over Time by Status (student/employee/guest)
-### Graph
-![rq1_visirors_1](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/ff53bbbf-0f61-470a-8e90-d4f04b52bd34)
 
 Text Text
+
+![rq1_visirors_1](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/ff53bbbf-0f61-470a-8e90-d4f04b52bd34)
+
 
 ## Price Over Time by Category
 
