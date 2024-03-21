@@ -1,6 +1,10 @@
 # How has the average price for a meal in Schleswig-Holstein changed since 2021? 
 
-## Price Over Time by City
+## Exploring Meal Price Changes in Schleswig-Holstein Since 2021
+
+To explore this research question we build a data set for all canteens in Schleswig-Holstein. This data set dates back to 2021 and is merged from the OpenMensa API and web scraped data. Since 2021, the dynamics of meal pricing within Schleswig-Holstein's canteens have undergone noticeable changes. Here we analyse different aspects—geographical (by city), status-based (student, employee, guest), and dietary categories (vegan, vegetarian, meat)—this study aims to unravel the intricacies of these pricing adjustments.
+
+### Price Over Time by City
 
 ### Graph
 ![rq1_city_1](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/1bc7cb1d-f8db-49bc-9240-cc0e7d682dc6)
