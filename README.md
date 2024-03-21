@@ -64,7 +64,7 @@ The web-scraped dataset was obtained from one of our classmates, [Lia Lenckowski
 
 #### OpenMensa API
 
-BlaBlaBla
+To build our dataset from the OpenMensa API, we first acquired a dataset containing all canteen locations and IDs (in total 1210) using its API, then mapped these to German cities and states using a dictionary created from scraping [Wikipedia's page of German cities](https://de.wikipedia.org/wiki/Liste_der_St%C3%A4dte_in_Deutschland). This allowed us to filter down to 687 canteens within Germany. Tackling the challenge of long request times and limited data retrieval (one day's meals per canteen ID per call), we automated the data collection process, running it continuously in multiple parallel processes on five Raspberry Pis. Specifically, we focused on collecting meal data from 2023 onwards for all German canteens and build a dedicated dataset for Schleswig-Holstein (SH) canteens starting from 2021 - the earliest data available for SH. Ultimately, we created three comprehensive datasets: one detailing Schleswig-Holstein canteens since 2021, a nationwide dataset from 2023, and a mapping of all German OpenMensa canteens with their respective locations (geo data) and IDs.
 
 
 ### Data Cleaning
