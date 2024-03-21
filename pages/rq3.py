@@ -12,10 +12,10 @@ dash.register_page(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
  
 
 #df = pd.read_csv('./data/german-canteens(filtered).csv', sep='@', engine='python')
-df =pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv','r',encoding='utf8')
+df =pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv',sep='@',encoding='utf8')
 # Load your data
 #data = pd.read_csv('./data/german-canteens(filtered).csv', sep='@', encoding='utf8')
-data =pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv','r',encoding='utf8')    
+data =pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv',sep='@',encoding='utf8')   
 
 data2 = pd.read_json('./data/further_updated_german_canteens.json', encoding='utf8')
 
