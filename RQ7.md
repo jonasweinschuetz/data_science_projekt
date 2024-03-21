@@ -2,10 +2,11 @@
 
 ## Impact of University Location on Student Meal Prices
 
+Displayed in this graphic are the 100 most expensive and cheapest canteens in Germany. Notably, there is some overlap among these establishments. When accounting for the entire range, the cheapest canteens predominantly cluster in Lower Saxony and North Rhine-Westphalia, particularly along the border with the Netherlands. Surprisingly, numerous affordable university canteens are situated in the southern regions. Conversely, the most expensive canteens tend to be located in the south near the French border, with additional high-priced options in Schleswig-Holstein and throughout central Germany.
 
 ![üüüüüüüüüüü](https://github.com/jonasweinschuetz/data_science_projekt/assets/90426856/65258518-1789-4067-8e26-be4976a3ad0a)
 
-
+This reveals the top five most expensive canteens in Germany, led by Tossingen, situated in Baden-Württemberg.
 
 ![expen](https://github.com/jonasweinschuetz/data_science_projekt/assets/90426856/5ff554b4-cd17-4992-b2ff-c6e231d0421f)
 
