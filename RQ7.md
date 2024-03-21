@@ -2,7 +2,7 @@
 
 ## Impact of University Location on Student Meal Prices
 
-
+![alt text](dooott.png)
 
 ### Most Expensive University Canteens:
 | University/Canteen                           | Price (€) |
@@ -17,8 +17,8 @@
 | University/Canteen                           | Price (€) |
 |---------------------------------------------|------------|
 | Heidelberg, Zeughaus-Mensa im Marstall      | 1.09       |
-| Mensa Hochschule für Musik, Detmold        | 1.26       |
-| Künzelsau, Mensa Reinhold-Würth-Hochschule | 1.29       |
+| Mensa Hochschule für Musik, Detmold         | 1.26       |
+| Künzelsau, Mensa Reinhold-Würth-Hochschule  | 1.29       |
 | Mensa HSBI, Minden                          | 1.42       |
 | Mensa TH OWL, Höxter                        | 1.45       |
 
