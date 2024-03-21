@@ -56,13 +56,9 @@ To install the dependencies, run the following command in your terminal or comma
 
 ### Data Collection
 
-#### Webscraping
+#### Web Scraping
 
 The web-scraped dataset was obtained from one of our classmates, [Lia Lenckowski](https://github.com/llenck). Her web scraper queries the subpages of the Studentenwerk SH responsible for the meal plan of each university. Each of these subpages can be passed an argument representing one of the canteens that the university has. Then, only the container containing the meal table needs to be extracted from the received HTML, and the dishes are loaded into a JSON-lines file. Since the canteens always provide their weekly schedule, a request is made for each canteen of each university of the Studentenwerk once a week.
-
-#### Webscraping
-
-
 
 ### Data Cleaning
 
@@ -77,6 +73,10 @@ The last point, which unfortunately came to our attention too late, is that in m
 ### Feature Engineering
 
 The most challenging part was classifying the dishes into the three VVO categories (vegan, vegetarian, and omnivorous). The first issue was that not every canteen clearly defined the status of their dishes in the tag list. Often, tag lists are filled with allergy warnings or other additional information, or even left empty. Therefore, after using regular expressions to identify obvious keywords such as meat, vegan, vegetarian, we manually reviewed the remaining names and tag lists and searched for ingredients that indicated the VVO status of the dish. Among the remaining entries, we classified all dishes containing animals/meat ingredients in their names or tags. Then we repeated thios procedure for animal products. By applying this method several times, we managed to capture the majority of omnivorous and vegetarian dishes. However, since vegan dishes are defined by the absence of animal ingredients, it is difficult to capture them using this filtering method. Unfortunately, we cannot assume that all remaining dishes are vegan, as many non-vegan dishes do not have their animal ingredients listed in the name or tag list (e.g., Spaghetti Bolognese or Pizza Margherita). This was the second challenge we encountered. One could attempt to employ heuristics to capture a few more vegan dishes. For instance, dishes containing tofu or soy in the name that were not flagged as omnivorous or vegetarian could be classified as vegan. However, we opted against this approach because such rules either affected dishes already classified as vegan or posed the risk of incorrectly labeling potentially non-vegan dishes as vegan. Although we were unable to resolve this issue and vegan dishes may therefore be potentially underrepresented, we managed to classify 83.41% of our 700,958 dishes using this method.
+
+## Website
+
+Hier LINK!!!
 
 
 # Research Questions
