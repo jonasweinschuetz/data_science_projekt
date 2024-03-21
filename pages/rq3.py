@@ -120,70 +120,76 @@ fig2.update_layout(
 )
 
 layout = dbc.Container([
-    dbc.Row([
-            dbc.Col([
-            dcc.Markdown('How is the relation between prizes of different customer status (student/faculty/guests)?',style={'textAlign':'center'})
-        ],width = 12)
-    ]),
-    
-    dbc.Row([
-        dbc.Col([
-           dcc.Graph(id="graph5", figure = fig2 )
-            
-        ])
-    ]),
-    dbc.Row([
-        dbc.Col([
-           dcc.Graph(id="graph6", figure = fig)           
-        ])
-    ]),
+    dbc.Row([dbc.Col([
+            dcc.Markdown('# 3. How is the relation between prizes of different customer status (student/faculty/guests)?',style={'textAlign':'center'})
+            ],width = 12)
+            ]),
+
     dbc.Row([
         dbc.Col([
            dcc.Markdown('''
 
-# How has the average price for a meal in Germany changed since 2023? 
 
-## Exploring Meal Price Changes in Germany Since 2023
+    ## How has the average price for a meal in Germany changed since 2023? 
 
-To explore this research question we build a data set for all canteens in Germany. This data set dates back to 1.1.2023 and is from the OpenMensa API. Since 2023, the dynamics of meal pricing within Germanys canteens have undergone some changes.
+    ### Exploring Meal Price Changes in Germany Since 2023
 
-## Average Data
-
-This table illustrates the absolute price changes for different price categories. The 'Student Price' experienced a modest increase of 0.13 € since 2023, while the 'Employee Price' saw a slightly larger increase of 0.19 € during the same period. Notably, the 'Guest Price' exhibited the highest absolute change, rising by 0.33 €. 
-
-| Price Category   | Absolute Price Change |
-|------------------|-----------------------|
-| Student Price    | 0.13 €                |
-| Employee Price   | 0.19 €                |
-| Guest Price      | 0.33 €                |
+    To explore this research question we build a data set for all canteens in Germany. This data set dates back to 1.1.2023 and is from the OpenMensa API. Since 2023, the dynamics of meal pricing within Germanys canteens have undergone some changes.
 
 
-## Trend Data
-                        
-This table showcases the percentage changes in prices across different categories. The 'Student Price' witnessed a modest increase of 5.60%, reflecting moderate inflationary pressures since 2023. In comparison, the 'Employee Price' saw a slightly higher percentage rise of 6.30%, indicating a marginally greater impact on this category. Remarkably, the 'Guest Price' experienced the most significant percentage change, soaring by 9.30%.                        
-
-| Price Category   | Percentage Change |
-|------------------|-------------------|
-| Student Price    | 5.60 %            |
-| Employee Price   | 6.30 %            |
-| Guest Price      | 9.30 %            |
-
-
-## Combined Data
-
-
-| **Average price change since 2023 (absolute)** |      |
-|-----------------------------------------------|------|
-| **Student Price:**                            | 0.13 €, or 5.60 \%  |
-| **Employee Price:**                           | 0.19 €, or 6.30 \%  |
-| **Guest Price:**                              | 0.33 €, or 9.30 \%  |
-                        
-
-''',style={'textAlign':'center'})   
+    ''',style={'textAlign':'center'})   
         ])
     ]),
-])
+    
 
+    dbc.Row([
+        dbc.Col([
+           dcc.Graph(id="graph6", figure = fig )       
+        ])
+    ]),
+
+    dbc.Row([
+        dbc.Col([
+           dcc.Markdown('''
+         
+    ## Average Data
+    This table illustrates the absolute price changes for different price categories. The 'Student Price' experienced a modest increase of 0.13 € since 2023, while the 'Employee Price' saw a slightly larger increase of 0.19 € during the same period. Notably, the 'Guest Price' exhibited the highest absolute change, rising by 0.33 €. 
+
+    | Price Category   | Absolute Price Change |
+    |------------------|-----------------------|
+    | Student Price    | 0.13 €                |
+    | Employee Price   | 0.19 €                |
+    | Guest Price      | 0.33 €                |
+
+    ## Trend Data                  
+    This table showcases the percentage changes in prices across different categories. The 'Student Price' witnessed a modest increase of 5.60%, reflecting moderate inflationary pressures since 2023. In comparison, the 'Employee Price' saw a slightly higher percentage rise of 6.30%, indicating a marginally greater impact on this category. Remarkably, the 'Guest Price' experienced the most significant percentage change, soaring by 9.30%.                        
+
+    | Price Category   | Percentage Change |
+    |------------------|-------------------|
+    | Student Price    | 5.60 %            |
+    | Employee Price   | 6.30 %            |
+    | Guest Price      | 9.30 %            |
+
+    ## Combined Data
+
+    | **Average price change since 2023 (absolute)** |      |
+    |-----------------------------------------------|------|
+    | **Student Price:**                            | 0.13 €, or 5.60 %  |
+    | **Employee Price:**                           | 0.19 €, or 6.30 %  |
+    | **Guest Price:**                              | 0.33 €, or 9.30 %  |
+                            
+
+    ''',style={'textAlign':'center'})   
+            ])
+        ]),
+                
+    dbc.Row([
+        dbc.Col([
+           dcc.Graph(id="graph5", figure = fig2)           
+        ])
+    ]),
+
+])
 
 
 

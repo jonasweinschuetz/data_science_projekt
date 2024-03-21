@@ -14,4 +14,4 @@ layout = dbc.Container([
             dcc.Markdown('Hier könnte ihr data collection beschreibung stehen',style={'textAlign':'center'})
         ],width = 12)
     ]),
-    ])
+])
