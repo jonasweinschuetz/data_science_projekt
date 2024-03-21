@@ -151,10 +151,14 @@ At first glance, it is apparent that Friday, Saturday, and Sunday are by far the
 ### On the state level 
 
 Our next step was to look for patterns on a finer scale, so we generated the previous plot for each federal state. Saturdays and Sundays continue to be outliers. This is likely because they adhere to the average prices of canteens offering weekend dishes. Accordingly, these two days are sometimes more expensive and sometimes cheaper than weekdays.
+ 
+For the working week days we firstly tried to locate weekdays that differ at least 5% from the week mean. Only Lower Saxony had weekdays that met this criterium.  
+When glancing over the average weekday prices for each state there is no aperent strong trend visible. Some states have price jump of around 5 cents on Mondays or Fridays when compared to the weekly average, but this can be explained with statistical variance. One day that raised our interest was the Friday in Brandenburg. It is 15 cent more expensive compared to the work-week average in Brandenburg. In order to get a better idea for the data, we will show some handselected plots where the y-axis has been scaled in a way that highlights the otherwhise barely visible changes in price.
 
+![alt text](documentation_files/weekly-price-brandenburg.png)
+![alt text](documentation_files/weekly-price-sh.png)
+![alt text](documentation_files/weekly-price-hamburg.png)
+![alt text](documentation_files/weekly-price-hessen.png)
+![alt text](documentation_files/weekly-price-mp.png)
 
-Only Lower Saxony (Fridays Overrepresented) has weekdays that cross a 5% threshold when compared to the work-week average
-
-
-Eating on a Friday in Brandenburg is 15 cent more expensive compared to the work-week average 
 
