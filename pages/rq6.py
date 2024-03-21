@@ -10,7 +10,8 @@ from wordcloud import WordCloud, STOPWORDS
 
 dash.register_page(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
 
-data = pd.read_csv("./data/german-canteens(filtered).csv",sep="@",index_col=0)
+#data = pd.read_csv("./data/german-canteens(filtered).csv",sep="@",index_col=0)
+data = pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv',sep="@",index_col=0)
 geo_data = pd.read_json('./data/further_updated_german_canteens.json',encoding='utf8')                    
                             
 df = data
