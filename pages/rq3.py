@@ -8,7 +8,7 @@ import json
 import os
 
 dash.register_page(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
-os.chdir('C:/Users/Micro/Desktop/Neuer Ordner/data_science_projekt')
+#os.chdir('C:/Users/Micro/Desktop/Neuer Ordner/data_science_projekt')
  
 bi_weekly_averages_no_outliers = pd.read_csv('./data/data_webapp/rq3_bi_weekly_averages_no_outliers.csv',sep='@',encoding='utf8')
 
