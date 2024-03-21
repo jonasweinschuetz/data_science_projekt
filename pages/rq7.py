@@ -17,12 +17,14 @@ def extract_coordinate(coord, index):
         return None
 
 # Load the data
-meals_df = pd.read_csv('./data/german-canteens(filtered).csv', sep='@', encoding='utf8')
+#meals_df = pd.read_csv('./data/german-canteens(filtered).csv', sep='@', encoding='utf8')
+meals_df = pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv', sep='@', encoding='utf8')
 # Load geo data
 with open('./data/further_updated_german_canteens.json', 'r', encoding='utf-8') as file:
     geo_data = json.load(file)
 # Load your data
-csv_path = './data/german-canteens(filtered).csv'
+#csv_path = './data/german-canteens(filtered).csv'
+csv_path = 'https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/german-canteens(filtered).csv'
 df = pd.read_csv(csv_path, sep='@', encoding='utf8')
 # Load JSON data and merge
 json_path = './data/further_updated_german_canteens.json'
