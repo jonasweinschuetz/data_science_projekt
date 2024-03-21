@@ -7,7 +7,7 @@ import json
 import os
 import imageio as iio
 dash.register_page(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
-os.chdir('C:/Users/Micro/Desktop/neues_repo/data_science_projekt')
+#os.chdir('C:/Users/Micro/Desktop/neues_repo/data_science_projekt')
 
 bund_ki_res_frame= pd.read_csv('https://media.githubusercontent.com/media/jonasweinschuetz/data_science_projekt/main/data/data_webapp/rq2_bund_ki_res_frame.csv',sep='@',encoding='utf8')
 
