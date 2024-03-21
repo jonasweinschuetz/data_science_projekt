@@ -4,7 +4,7 @@
 
 To explore this research question we build a data set for all canteens in Schleswig-Holstein. This data set dates back to 2021 and is merged from the OpenMensa API and web scraped data. Since 2021, the dynamics of meal pricing within Schleswig-Holstein's canteens have undergone noticeable changes. Here we analyse different aspects: geographical (by city), status-based (student, employee, guest), and dietary categories (vegan, vegetarian, omnivorous). We aim to unravel the intricacies of these pricing adjustments.
 
-### Price Over Time by City
+### Impact of location on price change
 
 Looking at the average meal pricing data of the cities it reveals that each city within Schleswig-Holstein exhibited significant price changes. Kiel, Flensburg, and Heide have shown a steady increase in meal prices. Lübeck presents an interesting case with the smallest price increase by EUR, but only an slightly smaller percentage increase than the rest, indicating that the local pricing in general seems to be cheaper. 
 
@@ -35,19 +35,16 @@ In 2022 and 2023, meal prices in Schleswig-Holstein (SH) rose significantly, yet
 
 _Food Inflation = Germany-wide food inflation rate ([destatis.de](https://destatis.de))_
 
-## Price Over Time by Status (student/employee/guest)
+## Impact of visitor status on price change
 
-Text Text
+A closer examination of the meal price changes based on the visitors status (student, employee, guest) reveals a nuanced impact. Guests saw an yearly increase of 10.92 % (0.47 €), employees experienced a 10.47 % rise (0.42 €), and students faced the highest jump at 10.94 % (0.31 €). This tiered pricing model reflects the canteens' efforts to balance affordability during inflation for students, employees, and guests.
 
 ![rq1_visirors_1](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/ff53bbbf-0f61-470a-8e90-d4f04b52bd34)
 
+## Impact of dietary categories on price change
 
-## Price Over Time by Category
+The analysis extends to the variations in meal prices across different dietary categories: vegan, vegetarian, and meat-based meals. The data highlights a surprising trend towards higher price adjustments for vegan meals, followed by meat-based and lastly vegetarian options. Specifically, vegan dishes saw an average yearly price change of 18.33 % (0.54 €), contrasting with the more modest increases for meat-based (16.84 %, 0.67 €) and vegetarian (15.41 %, 0.48 €) meals. This pattern could reflect the rising costs of vegan food production, alongside growing demand for plant-based diets among the student population. However, the average prices could be slightly missleading because of some outliers as can be seen in the graph. Looking at the trend lines and their slope, we can deduct, that 
 
-### Graph
-![rq1_city_1](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/4fe56428-6914-4304-b9b0-07c36e5caaf5)
+![rq1_category_1](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/098cc59f-f387-4521-8b11-e48dde3c1c4a)
 
-### Trend
-![rq1_city_2](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/ff1086e8-9d51-40e3-b2bd-1a0cce1f9707)
-
-Text Text
+![rq1_category_2](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/64441c51-b427-4268-8f15-cb89754f7d5e)
