@@ -160,5 +160,4 @@ When glancing over the average weekday prices for each state there is no aperent
 ![alt text](documentation_files/weekly-price-hamburg.png)
 ![alt text](documentation_files/weekly-price-hessen.png)
 ![alt text](documentation_files/weekly-price-mp.png)
-
-
+![alt text](documentation_files/weekly-price-mensa1.png)
