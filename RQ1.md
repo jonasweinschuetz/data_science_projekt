@@ -50,4 +50,6 @@ Further analysis delves into price variations across dietary categories: vegan, 
 
 ![rq1_category_2](https://github.com/jonasweinschuetz/data_science_projekt/assets/59099913/64441c51-b427-4268-8f15-cb89754f7d5e)
 
+## Conclusion
+
 Our comprehensive analysis of meal price changes in Schleswig-Holstein's canteens since 2021 highlights several key trends. Geographical location, visitor status, and dietary choices significantly influence price adjustments, with vegan meals experiencing the highest increases. Despite the inflationary pressures, canteen meal prices in the region have generally remained below the national food inflation rate, suggesting efforts by canteen operators to keep meals accessible to their primary clientele. As dietary habits continue to evolve and economic conditions change, these trends offer valuable insights for diverse and economically sensitive people such as students, employees, and guests in educational institutions.
