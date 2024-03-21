@@ -1,10 +1,12 @@
 # Feeding the Academic Appetite: Price Dynamics and Dietary Trends of German Canteens
 
+## Table of Contents
+
+- [About this Project](#about-this-project)
+
 ## About this Project
 
 This project aims to collect, analyze, and evaluate data from german educational canteens and cafeterias. The project primarily focuses on prices and the distribution of vegan, vegetarian, and meat/omnivorous dishes that are offered in the canteens. 
-
-
 
 ## Repository Structure 
 
@@ -142,7 +144,7 @@ Further analysis delves into price variations across dietary categories: vegan, 
 Our comprehensive analysis of meal price changes in Schleswig-Holstein's canteens since 2021 highlights several key trends. Geographical location, visitor status, and dietary choices significantly influence price adjustments, with vegan meals experiencing the highest increases. Despite the inflationary pressures, canteen meal prices in the region have generally remained below the national food inflation rate, suggesting efforts by canteen operators to keep meals accessible to their primary clientele. As dietary habits continue to evolve and economic conditions change, these trends offer valuable insights for diverse and economically sensitive people such as students, employees, and guests in educational institutions.
 
 
-## How has the average price for a meal in Germany changed since 2023? 
+## 3. How has the average price for a meal in Germany changed since 2023? 
 
 ### Exploring Meal Price Changes in Germany Since 2023
 
