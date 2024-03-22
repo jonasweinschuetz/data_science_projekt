@@ -11,7 +11,7 @@
   - [OpenMensa-API](#OpenMensa-API)
   - [Feature Engineering](#Feature-Engineering)
 - [Website](#Website)
-- [Research-Questions](#Research-Questions)
+- [Research Questions:](#Research-Questions)
   - [1. How has the average price for a meal in Schleswig-Holstein changed since 2021?](#1-How-has-the-average-price-for-a-meal-in-Schleswig-Holstein-changed-since-2021)
   - [2. How do average student meal prices compare according to their category?](#2-How-do-average-student-meal-prices-compare-according-to-their-category)
   - [3. How has the average price for a meal in Germany changed since 2023?](#3-How-has-the-average-price-for-a-meal-in-Germany-changed-since-2023)
