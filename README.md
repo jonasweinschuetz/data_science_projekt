@@ -150,7 +150,7 @@ To address the research question, we decided to classify the collected data into
 
 ![alt text](documentation_files/rq2_box_plot_total_states.png)
 
-The graphic yields the following results.
+The graphic yields the following results:
 
 Price deviation from national average by meal category (left:mean, right: median)
 
@@ -159,7 +159,6 @@ Price deviation from national average by meal category (left:mean, right: median
 Germany: | -9.92 % | -2.89 % | +16.94 % | -4.76 % | 0.00 % | +11.90 % |
 
 From this table, it can be observed that a vegan dish is significantly more cost-effective compared to the values for the entire Germany, whereas a meat dish is significantly more expensive.
-
 We then repeated the same procedure for dishes from Kiel.
 
 ![alt text](documentation_files/rq2_box_plot_kiel.png)
@@ -175,7 +174,6 @@ Kiel: | -6.59 % | -7.74 % | +12.03 % | -14.71 % | -2.94 % | +17.65 % |
 From this table, it can be inferred that Kiel reflects the nationwide trend.
 
 In general, it can be said that there are significant differences between the categories. While the price differences in vegetarian dishes are not quite as large (ranging between -2.89%/-7.74% (mean/median)) as in vegan/meat dishes.
-
 Particularly, noticeable differences can be observed within these categories, with variations of -9.92%/+16.94% (vegan/meat) (all states) and -6.59%/+12.03% (vegan/meat) (Kiel).
 
 We then further investigated how the price distribution within the categories varies among the federal states. This resulted in the following maps:
