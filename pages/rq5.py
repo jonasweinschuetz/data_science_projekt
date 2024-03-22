@@ -171,49 +171,49 @@ layout = dbc.Container([
 
 
 
-   # dbc.Row([
-   #         dbc.Col([
-   #          dbc.Select(
-   # options=[
-   #     {"label": "Germany", "value": "Germany"},
-   #     {"label": "Baden-Württemberg", "value": "Baden-Württemberg"},
-   #     {"label": "Bayern", "value": "Bayern"},
-   #     {"label": "Berlin", "value": "Berlin"},
-   #     {"label": "Brandenburg", "value": "Brandenburg"},
-   #     {"label": "Bremen", "value": "Bremen"},
-   #     {"label": "Hamburg", "value": "Hamburg"},
-   #    {"label": "Hessen", "value": "Hessen"},
-   #     {"label": "Mecklenburg-Vorpommern", "value": "Mecklenburg-Vorpommern"},
-   #     {"label": "Niedersachsen", "value": "Niedersachsen"},
-   #     {"label": "Nordrhein-Westfalen", "value": "Nordrhein-Westfalen"},
-   #     {"label": "Rheinland-Pfalz", "value": "Rheinland-Pfalz"},
-   #     {"label": "Saarland", "value": "Saarland"},
-   #     {"label": "Sachsen", "value": "Sachsen"},
-   #     {"label": "Sachsen-Anhalt", "value": "Sachsen-Anhalt"},
-   #     {"label": "Schleswig-Holstein", "value": "Schleswig-Holstein"},
-   #     {"label": "Thüringen", "value": "Thüringen"},
-   # ], value="Germany",id="selector5",)
-   #     ],width = 12)
-   # ]),
-   # dbc.Row([
-    #        dbc.Col([
-    #         dbc.Input(placeholder="enter number between 0-2" ,id = "input1",min = 0,max =2, valid=True,value=2),
-    #         dbc.Input(placeholder="enter number between 0.0-20.0" ,id = "input2",min = 0,max =20, valid=True,value=8),
-    #        
-    #    ],width = 12)
-   # ]),
-   # dbc.Row(id = "colum"),
+    dbc.Row([
+           dbc.Col([
+             dbc.Select(
+    options=[
+        {"label": "Germany", "value": "Germany"},
+        {"label": "Baden-Württemberg", "value": "Baden-Württemberg"},
+        {"label": "Bayern", "value": "Bayern"},
+        {"label": "Berlin", "value": "Berlin"},
+        {"label": "Brandenburg", "value": "Brandenburg"},
+        {"label": "Bremen", "value": "Bremen"},
+        {"label": "Hamburg", "value": "Hamburg"},
+       {"label": "Hessen", "value": "Hessen"},
+        {"label": "Mecklenburg-Vorpommern", "value": "Mecklenburg-Vorpommern"},
+        {"label": "Niedersachsen", "value": "Niedersachsen"},
+        {"label": "Nordrhein-Westfalen", "value": "Nordrhein-Westfalen"},
+        {"label": "Rheinland-Pfalz", "value": "Rheinland-Pfalz"},
+        {"label": "Saarland", "value": "Saarland"},
+        {"label": "Sachsen", "value": "Sachsen"},
+        {"label": "Sachsen-Anhalt", "value": "Sachsen-Anhalt"},
+        {"label": "Schleswig-Holstein", "value": "Schleswig-Holstein"},
+        {"label": "Thüringen", "value": "Thüringen"},
+    ], value="Germany",id="selector5",)
+        ],width = 12)
+    ]),
+    dbc.Row([
+            dbc.Col([
+             dbc.Input(placeholder="enter number between 0-2" ,id = "input1",min = 0,max =2, valid=True,value=2),
+             dbc.Input(placeholder="enter number between 0.0-20.0" ,id = "input2",min = 0,max =20, valid=True,value=8),
+            
+        ],width = 12)
+    ]),
+    dbc.Row(id = "colum"),
 ])
 @callback(
     Output("graph9", "figure"),
-   # Output("colum", "children"),
+    Output("colum", "children"),
     Input("selector4","value"),
-    #Input("selector5","value"),
-    #Input("input1","value"),
-    #Input("input2","value")   
+    Input("selector5","value"),
+    Input("input1","value"),
+    Input("input2","value")   
 )
-#def update_graph(value1,value2,value3,value4):
-def update_graph(value1):
+def update_graph(value1,value2,value3,value4):
+#def update_graph(value1):
     fig_state = px.bar(df_state[df_state["state"] == value1], 
              x="weekday",
              y="vvo_percentage",
@@ -224,24 +224,24 @@ def update_graph(value1):
              title="Percentage of v/v/o meals each Weekday in the state of "+value1)
     fig_state.update_layout(autosize=False,width=900,height=300,)
     
-    #if (value3 == ''):
-    #    value3 = 0
+    if (value3 == ''):
+        value3 = 0
         
-    #temp_int = float(value3)
-    #temp_int = int(value3)
+    temp_int = float(value3)
+    temp_int = int(value3)
     
-    #if (value4 == ''):
-    #    value4 = 0
+    if (value4 == ''):
+        value4 = 0
     
-    #fig_temp = canteen_meal_distribution_after_std_threshold(df_canteen, float(value4), temp_int, value2)
-    #res =[]
+    fig_temp = canteen_meal_distribution_after_std_threshold(df_canteen, float(value4), temp_int, value2)
+    res =[]
     
-    #for i in range(len(fig_temp)):
-     #   res += [dbc.Col([
-    #        dcc.Graph(id="graph10_"+str(i),
-    #        figure = fig_temp[i])
-     #       ],width = 12)]
+    for i in range(len(fig_temp)):
+        res += [dbc.Col([
+            dcc.Graph(id="graph10_"+str(i),
+            figure = fig_temp[i])
+            ],width = 12)]
         
-    return fig_state#,res 
+    return fig_state,res 
 
 
