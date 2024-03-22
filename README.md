@@ -231,7 +231,7 @@ But this was not enough, we wanted to dig deeper. To get the full picture we nee
 
 ![alt text](documentation_files/max-categtory-std-distribution.png)
 
-[text](README.md) ![text](<documentation_files/weekdays-categories-canteens (7).png>) ![text](<documentation_files/weekdays-categories-canteens (12).png>) ![text](<documentation_files/weekdays-categories-canteens (11).png>) ![text](<documentation_files/weekdays-categories-canteens (10).png>) ![text](<documentation_files/weekdays-categories-canteens (9).png>) ![text](<documentation_files/weekdays-categories-canteens (8).png>)
+![text](<documentation_files/weekdays-categories-canteens (7).png>) ![text](<documentation_files/weekdays-categories-canteens (12).png>) ![text](<documentation_files/weekdays-categories-canteens (11).png>) ![text](<documentation_files/weekdays-categories-canteens (10).png>) ![text](<documentation_files/weekdays-categories-canteens (9).png>) ![text](<documentation_files/weekdays-categories-canteens (8).png>)
 
 
 
