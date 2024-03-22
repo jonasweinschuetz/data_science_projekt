@@ -6,7 +6,7 @@
 - [Repository Structure](#Repository-Structure )
 - [The Data-Sets](#The-Data-Sets)
 - [Dependencies](#Dependencies)
-- [Challenges](#Challenges)
+- [Challenges:](#Challenges)
   - [Data Collection](#Data-Collection)
   - [OpenMensa-API](#OpenMensa-API)
   - [Feature Engineering](#Feature-Engineering)
