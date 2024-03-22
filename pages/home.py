@@ -24,10 +24,11 @@ layout = dbc.Container([
             dcc.Markdown('Iason Papandreou, Nikolaus Lieberum, Mika Friesenborg, Jonas Weinschütz',style={'textAlign':'center'})
         ],width = 12)
     ]),
-        dbc.Row([dbc.Col([
+    dbc.Row([
+        dbc.Col([
             dcc.Markdown('**About This Project**',style={'textAlign':'center'})
             ],width = 12)
-            ]),
+    ]),
 
     dbc.Row([
         dbc.Col([
