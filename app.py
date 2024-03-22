@@ -18,7 +18,7 @@ navbar = dbc.Navbar(
     dbc.Container([
         dbc.Row(
             [
-                dbc.Col(html.Img(src=f'data:image/png;base64,{encoded_image}', height="30px"), width="auto"),
+                dbc.Col(html.Img(src=f'data:image/png;base64,{encoded_image}', style={"height": "5vh"}), width="auto"),
                 dbc.Col(dbc.NavbarBrand(" ", className="ms-2"), align="center", width="auto"),
                 dbc.Col(
                     dbc.Nav(
@@ -48,6 +48,7 @@ navbar = dbc.Navbar(
                 ),
             ],
             align="center",
+            className="g-0",
         ),
     ]),
     color="primary",
