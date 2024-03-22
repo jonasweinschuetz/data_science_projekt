@@ -144,6 +144,57 @@ Further analysis delves into price variations across dietary categories: vegan, 
 Our comprehensive analysis of meal price changes in Schleswig-Holstein's canteens since 2021 highlights several key trends. Geographical location, visitor status, and dietary choices significantly influence price adjustments, with vegan meals experiencing the highest increases. Despite the inflationary pressures, canteen meal prices in the region have generally remained below the national food inflation rate, suggesting efforts by canteen operators to keep meals accessible to their primary clientele. As dietary habits continue to evolve and economic conditions change, these trends offer valuable insights for diverse and economically sensitive people such as students, employees, and guests in educational institutions.
 
 
+## 2. How do average student meal prices compare according to their category?
+
+To address the research question, we decided to classify the collected data into the categories Vegan/Vegetarian/Animal, then group them and juxtapose them. This resulted in the following figure:
+
+
+!! RQ box_plot_total_states!!
+
+
+The graphic yields the following results.
+
+Price deviation from national average by meal category mean median
+
+| Location | Vegan | Vegetarian | Omnivorous | Vegan | Vegetarian | Omnivorous
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+Germany: | -9.92 % | -2.89 % | +16.94 % | -4.76 % | 0.00 % | +11.90 % |
+
+From this table, it can be observed that a vegan dish is significantly more cost-effective compared to the values for the entire Germany, whereas a meat dish is significantly more expensive.
+
+We then repeated the same procedure for dishes from Kiel.
+
+!! RQ box_plot_Kiel!!
+
+The graphic yields the following results:
+
+Price deviation from national average by meal category
+mean median
+| Location | Vegan | Vegetarian | Omnivorous | Vegan | Vegetarian | Omnivorous
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+Kiel: | -6.59 % | -7.74 % | +12.03 % | -14.71 % | -2.94 % | +17.65 % | 
+
+From this table, it can be inferred that Kiel reflects the nationwide trend.
+
+In general, it can be said that there are significant differences between the categories. While the price differences in vegetarian dishes are not quite as large (ranging between -2.89%/-7.74% (mean/median)) as in vegan/meat dishes.
+
+Particularly, noticeable differences can be observed within these categories, with variations of -9.92%/+16.94% (vegan/meat) (all states) and -6.59%/+12.03% (vegan/meat) (Kiel).
+
+We then further investigated how the price distribution within the categories varies among the federal states. This resulted in the following maps:
+
+!!KArte 1-3!!
+
+Most expensive states (without Berlin, Bremen):
+- Vegan: Rhineland-Palatinate, Saarland, Schleswig-Holstein
+- Vegetarian: Rhineland-Palatinate, Hamburg, Saarland
+- Omnivorous: Rhineland-Palatinate, Hesse, Hamburg
+
+Generally, there is no significant difference between the "old" and "new" federal states. Also, we noticed that despite being often labeled as the most expensive university cafeteria city in Germany, 
+Sh only ranks in the top three in one of the three categories (vegan).
+
+
+
+
 ## 3. How has the average price for a meal in Germany changed since 2023? 
 
 ### Exploring Meal Price Changes in Germany Since 2023
