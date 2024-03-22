@@ -170,6 +170,7 @@ The graphic yields the following results:
 
 Price deviation from national average by meal category
 mean median
+| mean | median |
 | Location | Vegan | Vegetarian | Omnivorous | Vegan | Vegetarian | Omnivorous
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 Kiel: | -6.59 % | -7.74 % | +12.03 % | -14.71 % | -2.94 % | +17.65 % | 
