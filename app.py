@@ -39,12 +39,6 @@ navbar = dbc.Navbar(
                                 nav=True,
                                 in_navbar=True,
                                 label="Research Questions",
-                                style={
-                                    "maxWidth": "100%",  
-                                    "overflow": "hidden",  
-                                    "textOverflow": "ellipsis",  
-                                    "whiteSpace": "normal"  
-                                },
                             ),
                         ],
                         className="ms-auto",  # This class aligns the nav items to the right
@@ -54,7 +48,6 @@ navbar = dbc.Navbar(
                 ),
             ],
             align="center",
-            className="g-0",
         ),
     ]),
     color="primary",
