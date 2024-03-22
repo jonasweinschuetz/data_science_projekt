@@ -87,7 +87,7 @@ fig2.update_layout(autosize=False,width=900,height=300,)
 layout = dbc.Container([
     dbc.Row([
             dbc.Col([
-            dcc.Markdown('# 5. Do weekdays affect the variety of meal categories?',style={'textAlign':'center'})
+            dcc.Markdown('# 5. Does the weekday influence the availability of dietary options in German canteens?',style={'textAlign':'center'})
         ],width = 12)
     ]),
 

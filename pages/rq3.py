@@ -121,7 +121,7 @@ fig2.update_layout(
 
 layout = dbc.Container([
     dbc.Row([dbc.Col([
-            dcc.Markdown('# 3. How is the relation between prizes of different customer status (student/faculty/guests)?',style={'textAlign':'center'})
+            dcc.Markdown('# 3. How does the average price change for visitors in Germany since 2023?',style={'textAlign':'center'})
             ],width = 12)
             ]),
 

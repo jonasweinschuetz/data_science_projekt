@@ -80,7 +80,7 @@ fig2.update_layout(
 layout = dbc.Container([
     dbc.Row([
             dbc.Col([
-            dcc.Markdown('# 7. Does the University’s location affect the average price of a dish?',style={'textAlign':'center'})
+            dcc.Markdown('# 7. Does a university’s location influence the average price of meals for students?',style={'textAlign':'center'})
         ],width = 12)
     ]),
     dbc.Row([

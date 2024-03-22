@@ -228,7 +228,7 @@ fig3.update_layout(
 ## dash
 layout = dbc.Container([
     dbc.Row([dbc.Col([
-            dcc.Markdown('# 1. How does the average price for a meal change over the observed time frame (Schleswig-Holstein)?',style={'textAlign':'center'})
+            dcc.Markdown('# 1. How has the average price for a meal in Schleswig-Holstein changed since 2021?',style={'textAlign':'center'})
             ],width = 12)
             ]),
     

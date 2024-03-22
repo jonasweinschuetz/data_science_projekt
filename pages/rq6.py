@@ -50,7 +50,7 @@ def name_wordcloud(df, full_names=False, category="", state="", w=4000, h=1800):
 layout = dbc.Container([
     dbc.Row([
             dbc.Col([
-            dcc.Markdown('What are the most common dishes/per state?',style={'textAlign':'center'})
+            dcc.Markdown('# 6. What are the most frequent words in meal names by category and geographic location?',style={'textAlign':'center'})
         ],width = 12)
     ]),
     dbc.Row([

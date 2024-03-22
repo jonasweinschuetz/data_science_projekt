@@ -40,7 +40,7 @@ img2 = px.imshow(img)
 
 layout = dbc.Container([
     dbc.Row([dbc.Col([
-            dcc.Markdown('# 2. How do average meal prices changes, compare with each other according to category (vegan/vegetarian/meat)?',style={'textAlign':'center'})
+            dcc.Markdown('# 2. How do average student meal prices compare according to their category?',style={'textAlign':'center'})
             ],width = 12)
     ]),
     dbc.Row([dbc.Col([
