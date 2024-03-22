@@ -213,17 +213,25 @@ When glancing over the average weekday prices for each state there is no aperent
 
 ## 5. Does the weekday influence the availability of dietary options in German canteens?
 
+### Country wide view
+
 Firstly, we examined the distribution of the three VVO categories per weekday for our entire dataset. 
 
 ![alt text](documentation_files/weekdays-categories-germany.png)
+
+### State level
 
 As expected, the distribution was fairly even. This is likely because patterns created by local regulations at the canteen level (e.g., Vegetarian Monday) tend to 'cancel out' when aggregated. Therefore, our next step was to take a closer look at our data and consider the canteens on a state level. Here two patterns emerged. In many countries (here, for example, Bavaria), the distribution remained fairly even. However, a surprising number of states had days with distinct outliers in their distribution (symbolized by Berlin and Brandenburg). These outliers are larger than can be explained by statistical noise. The hypothesis that in these states, canteens collectively offer fewer meat dishes on certain days is plausible. It is noteworthy that Berlin is the only one of these states where the outlier day has an increased offering of meat dishes.
 
 ![alt text](documentation_files/weekdays-categories-3states.png)
 
-But this was not enough, we wanted to dig deeper. To get the full picture we need to look at each individual canteen. But it would be too exhausting to examine the graph for each of the over 600 canteens individually. Therefore, we calculated the standard deviation for each dish category for each canteen to use the largest of the three as a benchmark for the presence of a day-dependent category policy. This simple measure is suprisingly good, but definitely still has room for improvement. It is certainly helpful for sorting out uninteresting canteens whose weekday distributions are homogeneous amongst eachother. On the website, you will find a tool that allows you to search for canteens whose maximum VVO standard deviation exceeds a certain minimum value. Here are a few hand selected examples.
+### Canteen level
 
+But this was not enough, we wanted to dig deeper. To get the full picture we need to look at each individual canteen. But it would be too exhausting to examine the graph for each of the over 600 canteens individually. Therefore, we calculated the standard deviation for each dish category for each canteen to use the largest of the three as a benchmark for the presence of a day-dependent category policy. This simple measure is suprisingly good, but definitely still has room for improvement. It is certainly helpful for sorting out uninteresting canteens whose weekday distributions are homogeneous amongst eachother. On the website, you will find a tool that allows you to search for canteens whose maximum VVO standard deviation exceeds a certain minimum value. Here are a few hand selected examples (threshold = 7), as well as the distribution of the maximal category standart deviations for each weekday.
 
+![alt text](documentation_files/max-categtory-std-distribution.png)
+
+[text](README.md) ![text](<documentation_files/weekdays-categories-canteens (7).png>) ![text](<documentation_files/weekdays-categories-canteens (12).png>) ![text](<documentation_files/weekdays-categories-canteens (11).png>) ![text](<documentation_files/weekdays-categories-canteens (10).png>) ![text](<documentation_files/weekdays-categories-canteens (9).png>) ![text](<documentation_files/weekdays-categories-canteens (8).png>)
 
 
 
