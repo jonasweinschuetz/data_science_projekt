@@ -4,6 +4,22 @@
 
 - [About This Project](#about-this-project)
 - [Repository Structure](#Repository-Structure )
+- [The Data-Sets](The-Data-Sets)
+- [Dependencies](Dependencies)
+- [Challenges](Challenges)
+  - [Data Collection](Data-Collection)
+  - [OpenMensa-API](OpenMensa-API)
+  - [Feature Engineering](Feature-Engineering)
+- [Website](Website)
+- [Research Questions]
+  - [1. How has the average price for a meal in Schleswig-Holstein changed since 2021?](#)
+  - [2. How do average student meal prices compare according to their category?](#)
+  - [3. How has the average price for a meal in Germany changed since 2023?](#)
+  - [4. Does the day of the week influence average meal prices?](#)
+  - [5. Does the weekday influence the availability of dietary options in German canteens?](#)
+  - [6. What are the most frequent words in meal names by category and geographic location?](#)
+  - [7. Does a university’s location influence the average price of meals for students?](#)
+
 
 ## About This Project
 
