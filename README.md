@@ -2,9 +2,10 @@
 
 ## Table of Contents
 
-- [About this Project](#about-this-project)
+- [About This Project](#about-this-project)
+- [Repository Structure](#Repository-Structure )
 
-## About this Project
+## About This Project
 
 This project aims to collect, analyze, and evaluate data from german educational canteens and cafeterias. The project primarily focuses on prices and the distribution of vegan, vegetarian, and meat/omnivorous dishes that are offered in the canteens. 
 
