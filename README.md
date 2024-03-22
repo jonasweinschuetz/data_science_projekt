@@ -148,13 +148,11 @@ Our comprehensive analysis of meal price changes in Schleswig-Holstein's canteen
 
 To address the research question, we decided to classify the collected data into the categories Vegan/Vegetarian/Animal, then group them and juxtapose them. This resulted in the following figure:
 
-
-!! RQ box_plot_total_states!!
-
+![alt text](documentation_files/rq2_box_plot_total_states.png)
 
 The graphic yields the following results.
 
-Price deviation from national average by meal category mean median
+Price deviation from national average by meal category (left:mean, right: median)
 
 | Location | Vegan | Vegetarian | Omnivorous | Vegan | Vegetarian | Omnivorous
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -164,14 +162,12 @@ From this table, it can be observed that a vegan dish is significantly more cost
 
 We then repeated the same procedure for dishes from Kiel.
 
-!! RQ box_plot_Kiel!!
+![alt text](documentation_files/rq2_box_plot_kiel.png)
 
 The graphic yields the following results:
 
-Price deviation from national average by meal category
-mean median
-| mean | median |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+Price deviation from national average by meal category (left:mean, right: median)
+
 | Location | Vegan | Vegetarian | Omnivorous | Vegan | Vegetarian | Omnivorous
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 Kiel: | -6.59 % | -7.74 % | +12.03 % | -14.71 % | -2.94 % | +17.65 % | 
@@ -184,7 +180,10 @@ Particularly, noticeable differences can be observed within these categories, wi
 
 We then further investigated how the price distribution within the categories varies among the federal states. This resulted in the following maps:
 
-!!KArte 1-3!!
+![alt text](documentation_files/rq2_german_map_vgn.png)
+![alt text](documentation_files/rq2_german_map_veg.png)
+![alt text](documentation_files/rq2_german_map_meat.png)
+
 
 Most expensive states (without Berlin, Bremen):
 - Vegan: Rhineland-Palatinate, Saarland, Schleswig-Holstein
