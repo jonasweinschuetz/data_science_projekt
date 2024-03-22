@@ -18,7 +18,7 @@
   - [4. Does the day of the week influence average meal prices?](#4-Does-the-day-of-the-week-influence-average-meal-prices)
   - [5. Does the weekday influence the availability of dietary options in German canteens?](#5-Does-the-weekday-influence-the-availability-of-dietary-options-in-German-canteens)
   - [6. What are the most frequent words in meal names by category and geographic location?](#6-What-are-the-most-frequent-words-in-meal-names-by-category-and-geographic-location)
-  - [7. Does a university’s location influence the average price of meals for students?](#7-Does-a-university’s-location-influence-the-average-price-of-meals-for-students)
+  - [7. Does a university’s location influence the average price of meals for students?](#7-Does-a-universitys-location-influence-the-average-price-of-meals-for-students)
 
 
 
