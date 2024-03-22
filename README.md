@@ -284,12 +284,30 @@ But this was not enough, we wanted to dig deeper. To get the full picture we nee
 ![text](<documentation_files/weekdays-categories-canteens (7).png>) ![text](<documentation_files/weekdays-categories-canteens (12).png>) ![text](<documentation_files/weekdays-categories-canteens (11).png>) ![text](<documentation_files/weekdays-categories-canteens (10).png>) ![text](<documentation_files/weekdays-categories-canteens (9).png>) ![text](<documentation_files/weekdays-categories-canteens (8).png>)
 
 
+## 6. What are the most frequent words in meal names by category and geographic location?
+
+In order to get an idea of what dishes are offered we started by creating wordclouds. As usual we did this on a countrywide and state level. It is interesting to observe how every state has other freqeunt dishes and what terms occur more frequently. Some examples would be fries, pasta and currywurst. 
+
+Here are the wordclouds for ...
+
+- Schleswig Holstein
+
+![alt text](<newplot (7).png>)
+
+- Bavaria
+![alt text](<newplot (8).png>)
+
+- Lower Saxony
+![alt text](<newplot (10).png>)
+
+- Saxony
+![alt text](<newplot (11).png>)
+
+- Berlin
+![alt text](<newplot (9).png>)
 
 
-
-
-
-## Research Question 7: Does a university’s location influence the average price of meals for students?
+## 7. Does a university’s location influence the average price of meals for students?
 
 ### Impact of University Location on Student Meal Prices
 
