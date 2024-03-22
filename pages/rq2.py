@@ -40,21 +40,80 @@ img2 = px.imshow(img)
 
 layout = dbc.Container([
     dbc.Row([dbc.Col([
-            dcc.Markdown('How do average meal prices changes, compare with each other according to category (vegan/vegetarian/meat)?',style={'textAlign':'center'})
+            dcc.Markdown('# 2. How do average meal prices changes, compare with each other according to category (vegan/vegetarian/meat)?',style={'textAlign':'center'})
             ],width = 12)
     ]),
     dbc.Row([dbc.Col([
-            dcc.Markdown('Price comparison of Kiel with the national average',style={'textAlign':'center'})
+            dcc.Markdown(' ',style={'textAlign':'center'})
             ],width = 12)
     ]),
+
+    dbc.Row([
+        dbc.Col([
+           dcc.Markdown('''
+
+            To address the research question, we decided to classify the collected data into the categories Vegan/Vegetarian/Animal, then group them and juxtapose them. This resulted in the following figure:
+
+    ''',style={'textAlign':'center'})   
+        ])
+    ]),
+
+
+
      dbc.Row([
          dbc.Col([
             dcc.Graph(id="graph1", figure = img2)
          ]),
      ]), 
+
+
+    dbc.Row([
+        dbc.Col([
+           dcc.Markdown('''
+
+            ## The graphic yields the following results:
+
+            #### Price deviation from national average by meal category (left:mean, right: median)
+
+
+    ''',style={'textAlign':'center'})   
+        ])
+    ]),
+
+
+
+    dbc.Row([
+        dbc.Col([
+           dcc.Markdown('''
+
+            | Location | Vegan | Vegetarian | Omnivorous | Vegan | Vegetarian | Omnivorous
+            | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+            Germany: | -9.92 % | -2.89 % | +16.94 % | -4.76 % | 0.00 % | +11.90 % |
+
+            From this table, it can be observed that a vegan dish is significantly more cost-effective compared to the values for the entire Germany, whereas a meat dish is significantly more expensive.
+            We then repeated the same procedure for dishes from Kiel.
+                        
+
+            | Location | Vegan | Vegetarian | Omnivorous | Vegan | Vegetarian | Omnivorous
+            | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+            Kiel: | -6.59 % | -7.74 % | +12.03 % | -14.71 % | -2.94 % | +17.65 % | 
+
+            From this table, it can be inferred that Kiel reflects the nationwide trend.
+
+            In general, it can be said that there are significant differences between the categories. While the price differences in vegetarian dishes are not quite as large (ranging between -2.89%/-7.74% (mean/median)) as in vegan/meat dishes.
+            Particularly, noticeable differences can be observed within these categories, with variations of -9.92%/+16.94% (vegan/meat) (all states) and -6.59%/+12.03% (vegan/meat) (Kiel).
+
+            We then further investigated how the price distribution within the categories varies among the federal states. This resulted in the following maps:
+            
+
+    ''',style={'textAlign':'left'})   
+        ])
+    ]),
+
+
     dbc.Row([
             dbc.Col([
-            dcc.Markdown('Heatmap of the Prices per categorie:',style={'textAlign':'center'})
+            dcc.Markdown('## Heatmap of the Prices per categorie:',style={'textAlign':'center'})
         ],width = 12)
     ]),
     dbc.Row([
@@ -85,7 +144,28 @@ layout = dbc.Container([
         dbc.Col([
            dcc.Graph(id="graph4")    
         ])
-    ])
+    ]),
+
+    dbc.Row([
+        dbc.Col([
+           dcc.Markdown('''
+
+            ## Most expensive states (without Berlin, Bremen):
+            - Vegan: Rhineland-Palatinate, Saarland, Schleswig-Holstein
+            - Vegetarian: Rhineland-Palatinate, Hamburg, Saarland
+            - Omnivorous: Rhineland-Palatinate, Hesse, Hamburg
+
+            Generally, there is no significant difference between the "old" and "new" federal states. Also, we noticed that despite being often labeled as the most expensive university cafeteria city in Germany, 
+            Sh only ranks in the top three in one of the three categories (vegan).
+
+
+    ''',style={'textAlign':'left'})   
+        ])
+    ]),
+
+
+
+
 ])
 @callback(
     Output("graph4", "figure"), 
