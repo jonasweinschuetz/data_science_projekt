@@ -107,7 +107,7 @@ The most challenging part was classifying the dishes into the three VVO categori
 
 ## Website
 
-Our very professional [web-application](https://data-science-projekt.onrender.com/)
+Our very professional [web-application](https://data-science-projekt.onrender.com/) (inactive)
 
 # Research Questions
 
